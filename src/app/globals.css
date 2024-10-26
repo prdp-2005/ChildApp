@@ -1,3 +1,54 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 
+.carousel {
+    width: 100%;
+    margin: auto;
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    font-size: 24px;
+}
+
+.slick-prev,
+.slick-next {
+    background-color: #F8D57E;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-disabled {
+    opacity: 1;
+    pointer-events: none;
+} */

@@ -1,3 +1,4 @@
+import Stories from "@/components/HomeComponents/Stories";
 import Banner from "../components/HomeComponents/Banner";
 import TabBanners from "../components/HomeComponents/TabBanners";
 import Whychild from "../components/HomeComponents/Whychild";
@@ -7,6 +8,7 @@ export default function Home() {
       <Banner />
       <TabBanners />
       <Whychild />
+      <Stories />
     </>
   );
 }

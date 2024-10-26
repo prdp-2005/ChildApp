@@ -14,4 +14,9 @@ export class Appassets {
     static whychildimg2 = require('../../public/home/Chillo Emojis 2.png').default;
     static whychildimg3 = require('../../public/home/Chillo Emojis 3.png').default;
     static whychildimg4 = require('../../public/home/Chillo Emojis 4.png').default;
+    static storyimg1 = require('../../public/home/story1img.png').default;
+    static storyimg2 = require('../../public/home/story2img.png').default;
+    static storyimg3 = require('../../public/home/story3img.png').default;
+    static starimg = require('../../public/home/Star Icon.png').default;
+    static starratingimg = require('../../public/home/Star Rating.png').default;
 }
