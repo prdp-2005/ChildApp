@@ -8,7 +8,7 @@ const Header = () => {
     const menus = ['Experts', 'About', 'Try Child Today']
     return (
         <>
-            <div className=" sm:block hidden overflow-hidden ">
+            <div className="sm:block hidden overflow-hidden ">
                 <div className="w-full h-full flex justify-center items-center p-4">
                     <div className="lg:w-[58%] xl:w-2/4  bg-white rounded-full flex justify-between items-center border border-black p-2 shadow-md">
                         <div className='px-1'>
