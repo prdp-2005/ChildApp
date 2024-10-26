@@ -13,6 +13,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        'teal': '0 4px 10px rgba(20, 184, 166, 0.5)',
+      },
     },
   },
   plugins: [],

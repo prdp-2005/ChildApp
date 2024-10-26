@@ -12,9 +12,9 @@ import { FaBehance } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 const Footer = () => {
     return (
-        <div className='w-full overflow-hidden flex flex-wrap  lg:py-28 lg:px-14 py-12 px-5'>
-            <div className='h-full w-full flex flex-col gap-10 sm:gap-24 md:items-start items-center'>
-                <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between lg:gap-11'>
+        <div className='w-full overflow-hidden flex flex-wrap  lg:py-28 lg:px-14 py-12 px-5 justify-center items-center'>
+            <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center'>
+                <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between gap-5 lg:gap-11'>
                     <div className='flex flex-col gap-3 justify-center items-center lg:items-start'>
                         <Link href='/'>
                             <Image
@@ -22,13 +22,13 @@ const Footer = () => {
                                 alt="External Image"
                                 className='w-[354px]'
                             /></Link>
-                        <p className='text-[#58595D] text-[32px] font-semibold'>
+                        <p className='text-[#58595D] md:text-[32px] font-semibold text-2xl my-2 md:my-0'>
                             Parenting made easy!
                         </p>
-                        <p className='text-[#58595D] text-[18px]'>
+                        <p className='text-[#58595D] md:text-[18px]'>
                             Made with ❤️️️ from Twin Mom Carolin.
                         </p>
-                        <div className='flex gap-2'>
+                        <div className='flex gap-2 mb-3 md:mb-0'>
                             <Link href='/'><Image
                                 src={Appassets?.footerappplayimg}
                                 alt="External Image"
@@ -43,7 +43,7 @@ const Footer = () => {
                     </div>
                     <div className='flex  mx-auto flex-wrap md:flex-nowrap justify-center items-start  gap-16 md:gap-8 lg:gap-40 mt-6 lg:flex-row'>
                         <div className='flex flex-col gap-[27px] flex-wrap'>
-                            <Link href={'/'}><p className='text-[#2E2F35] font-semibold'>COMPANY</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] font-semibold text-sm md:text-xl'>COMPANY</p></Link>
 
                             <div className='flex flex-col gap-[13px]'>
                                 <Link href={'/'}><p className='text-[#2E2F35] '>Experts</p></Link>
