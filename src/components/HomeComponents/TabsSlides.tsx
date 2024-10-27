@@ -4,8 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Appassets } from '@/constants/Appassets';
 import Image from 'next/image';
+import { useTheme } from '@/context/ThemeContext';
 
 const TabsSlides = () => {
+    const { darkMode } = useTheme();
     const data = [
         {
             id: 1,
@@ -43,7 +45,7 @@ const TabsSlides = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
     };
@@ -61,8 +63,7 @@ const TabsSlides = () => {
             <div className="slider-container  mx-auto   ">
                 <Slider {...settings}>
                     {data.map((item, index) => (
-                        <div key={item.id} onClick={() => handleTabClick(index)} className='flex flex-col gap-5
-                         cursor-pointer justify-center bg-primary-alpha-10 shadow-sm items-start rounded-lg hover:bg-teal-100 hover:shadow-md p-5 flex-wrap'>
+                        <div key={item.id} onClick={() => handleTabClick(index)} className="flex flex-col gap-5 cursor-pointer justify-center items-start shadow-sm rounded-lg p-5 flex-wrap bg-primary-alpha-10 hover:shadow-md hover:bg-teal-100 dark:hover:bg-[#15ACAC]">
                             <div className='font-semibold text-xl  mb-6'>{item.title}</div>
                             <div className='font-normal text-sm text-justify'>{item.desc}</div>
                         </div>

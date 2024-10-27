@@ -6,7 +6,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Appassets } from '@/constants/Appassets'
+import { useTheme } from '@/context/ThemeContext';
 const Whychild = () => {
+    const { darkMode } = useTheme();
     const data = [
         { id: 1, img: Appassets?.whychildimg1, text: 'Certified experts for every age.' },
         { id: 2, img: Appassets?.whychildimg2, text: 'Affordable expert knowledge.' },
@@ -19,7 +21,7 @@ const Whychild = () => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: true,
+        arrows: false,
         autoplay: true,
         autoplaySpeed: 2000,
     };
@@ -78,7 +80,7 @@ const Whychild = () => {
                         {data.map(item => (
                             <div key={item.id}>
                                 <Link href={'/'}>
-                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white shadow-md hover:shadow-teal ml-4 my-5'>
+                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white dark:bg-[#0E121B] shadow-md hover:shadow-teal ml-4 my-5'>
                                         <Image
                                             src={item.img}
                                             alt={item.text}

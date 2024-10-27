@@ -15,7 +15,9 @@ const Stories = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear"
+        cssEase: "linear",
+        arrows: false,
+
     };
     const data = [
         {
@@ -56,7 +58,7 @@ const Stories = () => {
                     <div className="carousel ">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-80 '>
+                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-[21rem] '>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}
