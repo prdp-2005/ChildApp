@@ -5,6 +5,7 @@
 .carousel {
     width: 100%;
     margin: auto;
+    position: relative;
 }
 
 .slick-prev,
@@ -20,6 +21,9 @@
     font-size: 18px;
     color: #333;
     cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
     transition: background-color 0.3s;
 }
@@ -38,6 +42,6 @@
 }
 
 .slick-disabled {
-    opacity: 1;
+    opacity: 0.3;
     pointer-events: none;
 }
