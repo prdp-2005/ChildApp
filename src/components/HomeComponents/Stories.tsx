@@ -1,5 +1,5 @@
 "use client"
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 import StoryComponent from '../StoryComponent'
 import { Appassets } from '@/constants/Appassets'
 import "slick-carousel/slick/slick.css";
