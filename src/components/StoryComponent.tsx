@@ -21,7 +21,7 @@ const StoryComponent: React.FC<StoryComponentProps> = ({ storydata }) => {
                     <Image
                         src={story.image || Appassets.fronttabbanner4img}
                         alt={story.title || "Story Image"}
-                        className='rounded h-14 w-14'
+                        className='rounded h-14 w-14 '
                     />
                     <h3 className='text-lg font-semibold'>{story.title}</h3>
                     <p className='text-sm text-[#374151] text-center'>{story.subtitle}</p>

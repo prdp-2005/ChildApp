@@ -55,7 +55,7 @@ const Stories = () => {
                     <div className="carousel">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center bg-white '>
+                                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center bg-white ' style={{ display: 'flex' }}>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}
@@ -66,11 +66,11 @@ const Stories = () => {
                                     <p className='text-justify text-[#2D2D2D] text-base'>{item.desc}</p>
                                     <div className='py-3'>
                                         {/* <ReactStars
-                            count={5}
-                            size={24}
-                            activeColor="#F8D57E"
-                            color='red'
-                        /> */}
+                                        count={5}
+                                        size={24}
+                                        activeColor="#F8D57E"
+                                        color='red'
+                                         /> */}
                                         <Image
                                             src={Appassets.starratingimg}
                                             alt={"Story Image"}
