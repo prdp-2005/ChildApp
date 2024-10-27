@@ -8,7 +8,7 @@ import Slider from 'react-slick';
 import Image from 'next/image';
 const Stories = () => {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -56,7 +56,7 @@ const Stories = () => {
                     <div className="carousel ">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center  '>
+                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center  '>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}

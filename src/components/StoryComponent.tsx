@@ -17,7 +17,7 @@ const StoryComponent: React.FC<StoryComponentProps> = ({ storydata }) => {
     return (
         <div className='flex md:flex-row flex-col justify-center gap-4  mt-5 '>
             {storydata.map((story: Story, index: number) => (
-                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center bg-white '>
+                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center bg-white w-[33%] '>
                     <Image
                         src={story.image || Appassets.fronttabbanner4img}
                         alt={story.title || "Story Image"}
