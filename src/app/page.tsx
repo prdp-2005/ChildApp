@@ -2,6 +2,7 @@ import Stories from "@/components/HomeComponents/Stories";
 import Banner from "../components/HomeComponents/Banner";
 import TabBanners from "../components/HomeComponents/TabBanners";
 import Whychild from "../components/HomeComponents/Whychild";
+import Planes from "@/components/HomeComponents/Planes";
 export default function Home() {
   return (
     <>
@@ -9,6 +10,7 @@ export default function Home() {
       <TabBanners />
       <Whychild />
       <Stories />
+      <Planes />
     </>
   );
 }
