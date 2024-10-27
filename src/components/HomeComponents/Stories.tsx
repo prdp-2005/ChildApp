@@ -48,25 +48,25 @@ const Stories = () => {
                 <h2 className='text-center font-semibold text-2xl lg:text-4xl mb-4'>
                     Real Stories from Satisfied Customers
                 </h2>
-                <p className='text-[#2D2D2D] text-center text-base mb-6'>
+                <p className='text-[#2D2D2D] text-center text-base mb-6 dark:text-white'>
                     See how Chilld is making an impact.
                 </p>
                 <div className='hidden md:block'>
                     <StoryComponent storydata={data} />
                 </div>
-                <div className='block md:hidden'>
+                <div className='block md:hidden '>
                     <div className="carousel ">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-[21rem] '>
+                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-[21rem] dark:bg-dark'>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}
                                         className='rounded h-14 w-14'
                                     />
                                     <h3 className='text-lg font-semibold'>{item.title}</h3>
-                                    <p className='text-sm text-[#374151] text-center'>{item.subtitle}</p>
-                                    <p className='text-justify text-[#2D2D2D] text-base'>{item.desc}</p>
+                                    <p className='text-sm text-[#374151] dark:text-white text-center'>{item.subtitle}</p>
+                                    <p className='text-justify text-[#2D2D2D] dark:text-white text-base'>{item.desc}</p>
                                     <div className='py-3'>
                                         {/* <ReactStars
                                         count={5}

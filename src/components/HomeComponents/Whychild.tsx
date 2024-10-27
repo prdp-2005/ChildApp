@@ -34,8 +34,8 @@ const Whychild = () => {
                 <p className='md:text-lg text-sm font-normal  md:text-start'>These are just a few reasons why you’ll love the Chilld app!</p>
 
                 <div className='hidden md:block'>
-                    <div className='flex flex-row gap-8 justify-center items-start flex-wrap'>
-                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white shadow-md hover:shadow-teal'>
+                    <div className='flex flex-row gap-8 justify-center items-start flex-wrap dark:shadow-custom '>
+                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg1}
                                 alt="External Image"
@@ -44,7 +44,7 @@ const Whychild = () => {
                             <p className='text-xs font-semibold [line-height: 24px;]'>Certified experts for every age.</p>
                         </div>
                         </Link>
-                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white shadow-md hover:shadow-teal'>
+                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg2}
                                 alt="External Image"
@@ -53,7 +53,7 @@ const Whychild = () => {
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Affordable expert knowledge.</p>
                         </div></Link>
-                        <Link href={'/'}><div className='flex flex-col gap-3 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white shadow-md hover:shadow-teal'>
+                        <Link href={'/'}><div className='flex flex-col gap-3 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg3}
                                 alt="External Image"
@@ -62,7 +62,7 @@ const Whychild = () => {
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Free knowledge in your pocket.</p>
                         </div></Link>
-                        <Link href={'/'}><div className='flex flex-col w-60 h-40  justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white shadow-md hover:shadow-teal'>
+                        <Link href={'/'}><div className='flex flex-col w-60 h-40  justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B]  shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg4}
                                 alt="External Image"
@@ -80,7 +80,7 @@ const Whychild = () => {
                         {data.map(item => (
                             <div key={item.id}>
                                 <Link href={'/'}>
-                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white dark:bg-[#0E121B] shadow-md hover:shadow-teal ml-4 my-5'>
+                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white  dark:bg-[#0E121B]  hover:shadow-teal ml-4 my-5 rounded-20px shadow-md  '>
                                         <Image
                                             src={item.img}
                                             alt={item.text}

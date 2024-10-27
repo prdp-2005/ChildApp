@@ -43,7 +43,7 @@ const TabBanners = () => {
                     What can you do with the Chilld app?
                 </p>
                 <div className='hidden md:block '>
-                    <div className=' mt-16 flex px-10  md:flex-nowrap flex-row  items-start justify-center'>
+                    <div className=' mt-16 flex px-10  md:flex-nowrap flex-row  items-start justify-center '>
                         <div className='w-[50%] h-full lg:flex justify-center '>
                             <Image
                                 src={darkMode ? Appassets?.darkfronttabbanner2img : data[issameIndex].image}

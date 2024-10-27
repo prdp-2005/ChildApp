@@ -20,6 +20,8 @@ const config: Config = {
       },
       boxShadow: {
         'teal': '0 4px 10px rgba(20, 184, 166, 0.5)',
+        'custom': '34.854px 29.626px 48.34px rgba(51, 102, 255, 0.05)',
+        'shadow': '34.854px 29.626px 48.34px 0px rgba(51, 102, 255, 0.05)'
       },
       borderWidth: {
         'custom-stroke': 'var(--sds-size-stroke-border)',
