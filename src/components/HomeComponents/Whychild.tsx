@@ -6,7 +6,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Appassets } from '@/constants/Appassets'
-import { useTheme } from '@/context/ThemeContext';
 const Whychild = () => {
     const data = [
         { id: 1, img: Appassets?.whychildimg1, text: 'Certified experts for every age.' },
