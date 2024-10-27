@@ -7,7 +7,6 @@ import Image from 'next/image';
 import { useTheme } from '@/context/ThemeContext';
 
 const TabsSlides = () => {
-    const { darkMode } = useTheme();
     const data = [
         {
             id: 1,

@@ -8,7 +8,6 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Appassets } from '@/constants/Appassets'
 import { useTheme } from '@/context/ThemeContext';
 const Whychild = () => {
-    const { darkMode } = useTheme();
     const data = [
         { id: 1, img: Appassets?.whychildimg1, text: 'Certified experts for every age.' },
         { id: 2, img: Appassets?.whychildimg2, text: 'Affordable expert knowledge.' },
