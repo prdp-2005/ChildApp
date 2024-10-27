@@ -1,20 +1,43 @@
 "use client"
-import React from 'react'
+import React, { MouseEventHandler } from 'react'
 import StoryComponent from '../StoryComponent'
 import { Appassets } from '@/constants/Appassets'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import Image from 'next/image';
+const NextArrow = ({ onClick }: { onClick?: MouseEventHandler<HTMLDivElement> }) => {
+    return (
+        <div
+            className="slick-next bg-[#F8D57E] border-none rounded-full w-10 h-10 flex justify-center items-center text-[#333] cursor-pointer z-10 hover:bg-white"
+            onClick={onClick}
+        >
+            →
+        </div>
+    );
+};
+
+const PrevArrow = ({ onClick }: { onClick?: MouseEventHandler<HTMLDivElement> }) => {
+    return (
+        <div
+            className="slick-prev bg-[#F8D57E] border-none rounded-full w-10 h-10 flex justify-center items-center text-[#333] cursor-pointer z-10 hover:bg-white"
+            onClick={onClick}
+        >
+            ←
+        </div>
+    );
+};
 const Stories = () => {
     const settings = {
         dots: false,
-        infinite: false,
+        infinite: true,
         speed: 1000,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
         autoplay: true,
+        nextArrow: <NextArrow />,
+        prevArrow: <PrevArrow />,
     };
     const data = [
         {
@@ -55,7 +78,7 @@ const Stories = () => {
                     <div className="carousel">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center bg-white ' style={{ display: 'flex' }}>
+                                <div key={index} className='rounded-[20px] border border-[#E5F4F2] shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)] flex flex-col gap-3 p-5 justify-center items-center  ' style={{ display: 'flex' }}>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}
