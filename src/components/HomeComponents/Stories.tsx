@@ -56,7 +56,7 @@ const Stories = () => {
                     <div className="carousel ">
                         <Slider {...settings}>
                             {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center  '>
+                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-80 '>
                                     <Image
                                         src={item.image || Appassets.fronttabbanner4img}
                                         alt={item.title || "Story Image"}
