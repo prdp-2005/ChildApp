@@ -80,14 +80,23 @@ import Image from 'next/image';
 import { Appassets } from '@/constants/Appassets';
 import ThemeToggle from '@/components/ThemeToggle';
 import { useTheme } from '@/context/ThemeContext';
-
+import Modal from '@/components/Model';
 const Sidebar = () => {
     const { darkMode } = useTheme();
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const menus = ['Experts', 'About', 'TryChildToday'];
     const [isMenuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
         setMenuOpen(prev => !prev);
+    };
+
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
     };
 
     return (
@@ -124,18 +133,28 @@ const Sidebar = () => {
                     className={`absolute bg-white rounded-lg w-full border border-content shadow-md p-4  dark:bg-dark transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}
                 >
                     <ul className="flex flex-col space-y-2">
+                        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
                         {menus.map((item) => (
                             <li key={item}>
-                                <Link
-                                    href={`/${item.toLowerCase()}`}
-                                    className="font-bold hover:bg-[#1DF2F2] py-2 px-4 rounded-lg transition-colors duration-200 ease-in-out dark:text-white dark:hover:bg-[#1DF2F2] dark:hover:text-black"
-                                    onClick={() => {
-                                        toggleMenu();
-                                    }}
-                                    aria-label={`Navigate to ${item}`}
-                                >
-                                    {item}
-                                </Link>
+                                {item === 'TryChildToday' ? (
+                                    <button
+                                        onClick={handleOpenModal}
+                                        className="font-bold hover:bg-[#1DF2F2] py-2 px-4 rounded-lg transition-colors duration-200 ease-in-out dark:text-white dark:hover:bg-[#1DF2F2] dark:hover:text-black"
+                                        aria-label={`Open ${item} form`}
+                                    >
+                                        {item}
+                                    </button>
+                                ) :
+                                    (<Link
+                                        href={`/${item.toLowerCase()}`}
+                                        className="font-bold hover:bg-[#1DF2F2] py-2 px-4 rounded-lg transition-colors duration-200 ease-in-out dark:text-white dark:hover:bg-[#1DF2F2] dark:hover:text-black"
+                                        onClick={() => {
+                                            toggleMenu();
+                                        }}
+                                        aria-label={`Navigate to ${item}`}
+                                    >
+                                        {item}
+                                    </Link>)}
                             </li>
                         ))}
                     </ul>

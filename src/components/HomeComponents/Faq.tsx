@@ -58,7 +58,7 @@ const Faq = () => {
                                 Submit
                             </button>
                         </form>
-
+        
                     </div>
                 </div>
             </div>

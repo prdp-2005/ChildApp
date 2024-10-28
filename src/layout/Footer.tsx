@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Appassets } from '@/constants/Appassets';
@@ -11,8 +11,18 @@ import { TiSocialDribbble } from "react-icons/ti";
 import { FaBehance } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { useTheme } from '@/context/ThemeContext';
+import Modal from '@/components/Model';
+
 const Footer = () => {
+    const [isModalOpen, setIsModalOpen] = useState(false);
     const { darkMode } = useTheme();
+    const handleOpenModal = () => {
+        setIsModalOpen(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+    };
     return (
         <div className='w-full overflow-hidden flex flex-wrap pb-3 lg:pb-5 lg:pt-28 lg:px-14 pt-12 px-5 justify-center items-center'>
             <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center'>
@@ -103,8 +113,9 @@ const Footer = () => {
                             <Link href={'/'}><FaBehance size={24} /></Link>
                             <Link href={'/'}><FaTwitter size={24} /></Link>
                         </div>
-                        <Link href={'/'}><div className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold text'>Try chilld today</p>
+                        <Link href={'/'}><div onClick={handleOpenModal} className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold text'>Try chilld today</p>
                         </div></Link>
+                        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
                     </div>
                 </div>
             </div>
