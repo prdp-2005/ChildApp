@@ -8,32 +8,20 @@ import { useTheme } from '@/context/ThemeContext';
 const Banner = () => {
     const { darkMode } = useTheme();
     return (
-        < div className='overflow-hidden w-full mx-auto  py-12 px-14 lg:py-12 lg:px-5' >
-            <div className='flex justify-center items-center flex-wrap md:flex-nowrap'>
-                <div className='flex flex-col gap-4 order-2 md:order-1 justify-center items-center md:items-start'>
-                    <div className='text-[#2D2D2D] dark:text-white font-bold md:text-5xl text-3xl text-center md:text-start'>Be a chilld <span className='text-[#1DF2F2] '>parent</span>.</div>
-                    <div className='text-[21px] text-center md:text-start'>Chilld is your expert parenting advice and support app.</div>
-                    <div className='text-[21px] text-center md:text-start'>We guide you through all the stages of parenthood.</div>
-                    <div className='flex gap-2'>
-                        <Link href={'/'}><Image
-                            src={darkMode ? Appassets?.darkgooglelogoimg : Appassets?.footerplaylogoimg}
-                            alt="External Image"
-                            className='w-[135px]'
-                        /></Link>
-                        <Link href={'/'}><Image
-                            src={darkMode ? Appassets?.darkappplaylogoimg : Appassets?.footerappplayimg}
-                            alt="External Image"
-                            className='w-[135px]'
-                        /></Link>
-                    </div>
+        < div className='overflow-hidden w-full  px-3 md:px-11  lg:px-5 flex justify-center items-center' >
+            <div className='flex justify-between items-center flex-wrap md:flex-nowrap w-[70%] lg:-mt-4 '>
+                <div className='flex flex-col gap-4 order-2 md:order-1 justify-between items-start md:items-start'>
+                    <div className='text-[#2D2D2D] dark:text-white font-semibold xl:text-5xl lg:text-3xl text-xl sm:text-2xl  text-start md:text-start items-stretch xl:leading-[64px] xl:tracking-[-0.56px]'>“Parenthood isn’t easy,<br /> We all need support
+                        raising children.”</div>
+                    <div className=' text-xs lg:text-[21px] lg:text-center md:text-start'>Carolin Neumann, Founder of Chilld and Twin Mom</div>
+
                 </div>
-                <div className='w-96 md:w-full md:h-full order-1 md:order-2 lg:w-96 dark:bg-dark'>
+                <div className='w-96 md:w-full  order-1 md:order-2 lg:w-[600px] dark:bg-dark'>
                     <Image
-                        src={Appassets?.frontbannerimg}
+                        src={darkMode ? Appassets?.maindarkbanner : Appassets?.mainlightbanner}
                         alt="External Image"
                         layout="responsive"
-                        className='h-[200px] w-[300px] '
-                    />
+                    />  
                 </div>
             </div>
         </div >

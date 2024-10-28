@@ -1,6 +1,14 @@
+import Banner from '@/components/AboutComponents/Banner'
+import Tabs from '@/components/AboutComponents/AboutTabs'
+import React from 'react'
+
 const About = () => {
-    return <h1>About Us</h1>;
-  };
-  
-  export default About;
-  
+  return (
+    <>
+      <Banner />
+      <Tabs />
+    </>
+  )
+}
+
+export default About

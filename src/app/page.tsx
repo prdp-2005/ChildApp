@@ -1,14 +1,14 @@
 import Stories from "@/components/HomeComponents/Stories";
-import Banner from "../components/HomeComponents/Banner";
-import TabBanners from "../components/HomeComponents/TabBanners";
+import HomeBanner from "@/components/HomeComponents/HomeBanner";
 import Whychild from "../components/HomeComponents/Whychild";
 import Planes from "@/components/HomeComponents/Planes";
 import Faq from "@/components/HomeComponents/Faq";
+import Tabs from "@/components/HomeComponents/HomeTabs";
 export default function Home() {
   return (
     <>
-      <Banner />
-      <TabBanners />
+      <HomeBanner />
+      <Tabs />
       <Whychild />
       <Stories />
       <Planes />

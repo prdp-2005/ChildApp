@@ -14,7 +14,7 @@ const Faq = () => {
                     <p className='font-semibold text-2xl md:text-4xl text-[#2D2D2D] text-wrap text-center md:text-start dark:text-white'>Let’s get in touch!</p>
                     <p className='md:text-lg font-normal text-justify text-xs sm:text-lg px-10'>Got questions about the chilld app? Our team is here to help. Contact us for quick and friendly support.</p>
                 </div>
-                <div className='flex flex-row flex-wrap justify-center md:justify-between w-full items-center gap-12'>
+                <div className='flex flex-row flex-wrap md:flex-nowrap justify-center md:justify-between w-full  items-center gap-12'>
                     <div className='flex flex-col gap-7 justify-center items-center'>
                         <p className='text-[24px] text-start font-semibold text-[#2D2D2D] dark:text-white'>Connect with us</p>
                         <div className='flex gap-[16px]'>

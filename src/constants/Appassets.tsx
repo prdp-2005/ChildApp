@@ -21,4 +21,7 @@ export class Appassets {
     static storyimg2 = require('../../public/home/story2img.png').default;
     static storyimg3 = require('../../public/home/story3img.png').default;
     static starratingimg = require('../../public/home/Star Rating.png').default;
+    static mainlightbanner = require('../../public/About/main light banner image.png').default;
+    static maindarkbanner = require('../../public/About/main dark banner image.png').default;
+
 }
