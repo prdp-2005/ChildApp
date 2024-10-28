@@ -129,7 +129,7 @@ const Sidebar = () => {
                                 <Link
                                     href={`/${item.toLowerCase()}`}
                                     className="font-bold hover:bg-[#1DF2F2] py-2 px-4 rounded-lg transition-colors duration-200 ease-in-out dark:text-white dark:hover:bg-[#1DF2F2] dark:hover:text-black"
-                                    onClick={(e) => {
+                                    onClick={() => {
                                         toggleMenu();
                                     }}
                                     aria-label={`Navigate to ${item}`}
