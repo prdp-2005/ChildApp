@@ -15,7 +15,6 @@ const Stories = () => {
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
-        cssEase: "linear",
         arrows: false,
 
     };
@@ -60,7 +59,7 @@ const Stories = () => {
 
                             {data.map((item, index) => (
                                 <div key={index} className=''>
-                                    <div className=' rounded-[20px] border flex flex-col gap-3 p-5 justify-center items-center h-[50vh] dark:bg-dark mx-2 my-2'>
+                                    <div className=' rounded-[20px] border flex flex-col gap-3 p-5 justify-center items-center h-[50vh]  dark:bg-dark mx-2 my-2 '>
                                         <Image
                                             src={item.image || Appassets.fronttabbanner4img}
                                             alt={item.title || "Story Image"}
