@@ -14,7 +14,7 @@ import { useTheme } from '@/context/ThemeContext';
 const Footer = () => {
     const { darkMode } = useTheme();
     return (
-        <div className='w-full overflow-hidden flex flex-wrap  lg:py-28 lg:px-14 py-12 px-5 justify-center items-center'>
+        <div className='w-full overflow-hidden flex flex-wrap pb-3 lg:pb-5 lg:pt-28 lg:px-14 pt-12 px-5 justify-center items-center'>
             <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center'>
                 <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between gap-5 lg:gap-11'>
                     <div className='flex flex-col gap-3 justify-center items-center lg:items-start'>
@@ -22,6 +22,7 @@ const Footer = () => {
                             <Image
                                 src={Appassets?.footerimg}
                                 alt="External Image"
+                                height={100}
                             /></Link>
                         <p className='text-[#58595D] dark:text-white md:text-[32px] font-semibold text-2xl my-2 md:my-0'>
                             Parenting made easy!
@@ -76,7 +77,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full flex flex-wrap justify-center md:justify-between md:items-start gap-3 '>
+                <div className='w-full flex flex-wrap justify-center md:justify-between  gap-3 items-center'>
                     <div className='flex flex-col gap-9 border-t-[1px] border-t-solid dark:border-custom-gray border-[#E1E4EA]'>
                         <div className='mt-10'>
                             <Link href={"/"}>
@@ -87,9 +88,11 @@ const Footer = () => {
                                 /></Link>
                             <p className='text-[#000] dark:text-white font-normal mt'>Parenting made easy</p>
                         </div>
-                        <div className='flex gap-1 justify-center items-center'>
-                            <Link href={'/'}><CiGlobe /></Link>
-                            <Link href={'/'}><RiEnglishInput /></Link>
+                        <div className='flex gap-1 justify-center items-center '>
+                            <div className=' flex flex-row gap-1 p-2 border border-black dark:border-white rounded-3xl'>
+                                <Link href={'/'}><CiGlobe /></Link>
+                                <Link href={'/'}><RiEnglishInput /></Link>
+                            </div>
                             <p className='text-[#58595D] text-[14px font-medium] dark:text-white'>© 2024 Chilld GmbH, All rights reserved.</p>
                         </div>
                     </div>
@@ -100,7 +103,7 @@ const Footer = () => {
                             <Link href={'/'}><FaBehance size={24} /></Link>
                             <Link href={'/'}><FaTwitter size={24} /></Link>
                         </div>
-                        <Link href={'/'}><div className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold'>Try chilld today</p>
+                        <Link href={'/'}><div className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold text'>Try chilld today</p>
                         </div></Link>
                     </div>
                 </div>

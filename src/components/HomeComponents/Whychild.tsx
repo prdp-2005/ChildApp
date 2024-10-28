@@ -24,7 +24,7 @@ const Whychild = () => {
         autoplaySpeed: 2000,
     };
     return (
-        <div className='overflow-hidden w-full mx-auto  py-12 px-14 lg:py-12 lg:px-5'>
+        <div className='overflow-hidden w-full mx-auto  py-12 px-7 md:px-14 lg:py-12 lg:px-5'>
             <div className='md:flex  flex-col  items-center justify-center flex-wrap md:flex-nowrap gap-7'>
                 <p className='font-semibold text-2xl md:text-4xl  flex justify-center items-center my-5'>
                     Why Chilld?
@@ -73,12 +73,12 @@ const Whychild = () => {
                     </div>
                 </div>
                 {/* slider for mobile  */}
-                <div className='block md:hidden '>
+                <div className='block md:hidden text-center'>
                     <Slider {...settings}>
                         {data.map(item => (
                             <div key={item.id}>
                                 <Link href={'/'}>
-                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white bg-white  dark:bg-[#0E121B]  hover:shadow-teal ml-4 my-5 rounded-20px shadow-md  '>
+                                    <div className='flex flex-col gap-3 w-60 h-40 justify-between items-center py-10 md:px-7 rounded-2xl  border border-white bg-white  dark:bg-[#0E121B]  hover:shadow-teal  my-5 rounded-20px shadow-md  mx-auto'>
                                         <Image
                                             src={item.img}
                                             alt={item.text}

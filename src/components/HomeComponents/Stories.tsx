@@ -54,33 +54,36 @@ const Stories = () => {
                 <div className='hidden md:block'>
                     <StoryComponent storydata={data} />
                 </div>
-                <div className='block md:hidden '>
+                <div className='block md:hidden'>
                     <div className="carousel ">
                         <Slider {...settings}>
-                            {data.map((item, index) => (
-                                <div key={index} className='rounded-[20px] border  flex flex-col gap-3 p-5 justify-center items-center h-[21rem] dark:bg-dark'>
-                                    <Image
-                                        src={item.image || Appassets.fronttabbanner4img}
-                                        alt={item.title || "Story Image"}
-                                        className='rounded h-14 w-14'
-                                    />
-                                    <h3 className='text-lg font-semibold'>{item.title}</h3>
-                                    <p className='text-sm text-[#374151] dark:text-white text-center'>{item.subtitle}</p>
-                                    <p className='text-justify text-[#2D2D2D] dark:text-white text-base'>{item.desc}</p>
-                                    <div className='py-3'>
-                                        {/* <ReactStars
-                                        count={5}
-                                        size={24}
-                                        activeColor="#F8D57E"
-                                        color='red'
-                                         /> */}
-                                        <Image
-                                            src={Appassets.starratingimg}
-                                            alt={"Story Image"}
-                                        />
-                                    </div>
 
-                                </div>
+                            {data.map((item, index) => (
+                                <div key={index} className=''>
+                                    <div className=' rounded-[20px] border flex flex-col gap-3 p-5 justify-center items-center h-[50vh] dark:bg-dark mx-2 my-2'>
+                                        <Image
+                                            src={item.image || Appassets.fronttabbanner4img}
+                                            alt={item.title || "Story Image"}
+                                            className='rounded h-14 w-14'
+                                        />
+                                        <h3 className='text-lg font-semibold'>{item.title}</h3>
+                                        <p className='text-sm text-[#374151] dark:text-white text-center'>{item.subtitle}</p>
+                                        <p className='text-justify text-[#2D2D2D] dark:text-white text-base'>{item.desc}</p>
+                                        <div className='py-3'>
+                                            {/* <ReactStars
+                                    count={5}
+                                    size={24}
+                                    activeColor="#F8D57E"
+                                    color='red'
+                                     /> */}
+                                            <Image
+                                                src={Appassets.starratingimg}
+                                                alt={"Story Image"}
+                                            />
+                                        </div>
+
+                                    </div></div>
+
                             ))}
                         </Slider>
                     </div>
