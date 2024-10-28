@@ -88,7 +88,7 @@ const Footer = () => {
                                 /></Link>
                             <p className='text-[#000] dark:text-white font-normal mt'>Parenting made easy</p>
                         </div>
-                        <div className='flex gap-1 justify-center items-center '>
+                        <div className='flex gap-2 justify-center items-center '>
                             <div className=' flex flex-row gap-1 p-2 border border-black dark:border-white rounded-3xl'>
                                 <Link href={'/'}><CiGlobe /></Link>
                                 <Link href={'/'}><RiEnglishInput /></Link>
