@@ -8,7 +8,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 import { useTheme } from '@/context/ThemeContext';
 const Header = () => {
     const { darkMode } = useTheme();
-    const menus = ['Experts', 'About', 'Try Child Today']
+    const menus = ['Experts', 'About', 'TryChildToday']
     return (
         <>
             <div className="sm:block hidden overflow-hidden ">
