@@ -30,24 +30,22 @@ const Planes = () => {
                 </h2>
                 <div className="flex flex-wrap gap-8 justify-center">
                     {planesdata.map((item) => (
-                        <>
-                            <div key={item.id} className="flex flex-col items-start justify-center gap-5 w-80 flex-wrap p-6 border rounded-[20px]  bg-white dark:bg-dark active:bg-[#1DF2F2] dark:active:bg-[#1DF2F2] active:border-[1px] active:border-black hover:shadow-teal cursor-pointer shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)]">
-                                <p className="text-lg lg:text-xl font-medium text-gray-700 dark:text-white">{item.planetype}</p>
-                                <div className="flex items-baseline gap-2">
-                                    <p className="text-gray-800 dark:text-white text-4xl lg:text-5xl font-bold">{item.price}</p>
-                                    <p className="text-gray-500 dark:text-white text-sm font-bold">/month</p>
-                                </div>
-                                <p className="text-gray-600 text-sm dark:text-white">{item.desc}</p>
-                                <div className='flex flex-col gap-1'>
-                                    <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
-                                    <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
-                                    <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
-                                </div>
-                                <div className='py-4 px-12 flex justify-center active:bg-white dark:bg-white items-center border border-[#0E121B] rounded-[20px] w-full dark:text-black'>
-                                    <p className='flex flex-row gap-2 items-center bg-transparent'> Get Started <FaArrowRightLong className='hover:text-black' /> </p>
-                                </div>
+                        <div key={item.id} className="flex flex-col items-start justify-center gap-5 w-80 flex-wrap p-6 border rounded-[20px]  dark:bg-dark active:bg-[#1DF2F2] dark:active:bg-[#1DF2F2] active:border-[1px] active:border-black hover:shadow-teal cursor-pointer shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)]">
+                            <p className="text-lg lg:text-xl font-medium text-gray-700 dark:text-white">{item.planetype}</p>
+                            <div className="flex items-baseline gap-2">
+                                <p className="text-gray-800 dark:text-white text-4xl lg:text-5xl font-bold">{item.price}</p>
+                                <p className="text-gray-500 dark:text-white text-sm font-bold">/month</p>
                             </div>
-                        </>
+                            <p className="text-gray-600 text-sm dark:text-white">{item.desc}</p>
+                            <div className='flex flex-col gap-1'>
+                                <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
+                                <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
+                                <p className='flex flex-row gap-2 items-center dark:text-white text-[#2D2D2D] font-bold'><FaCheck color='#1DF2F2' /> Write feature details here</p>
+                            </div>
+                            <div className='py-4 px-12 flex justify-center active:bg-white dark:bg-white items-center border border-[#0E121B] rounded-[20px] w-full dark:text-black'>
+                                <p className='flex flex-row gap-2 items-center bg-transparent'> Get Started <FaArrowRightLong className='hover:text-black' /> </p>
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>

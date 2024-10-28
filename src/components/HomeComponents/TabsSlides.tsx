@@ -4,8 +4,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Appassets } from '@/constants/Appassets';
 import Image from 'next/image';
+import { useTheme } from '@/context/ThemeContext';
 
 const TabsSlides = () => {
+    const { darkMode } = useTheme();
     const data = [
         {
             id: 1,
@@ -51,7 +53,7 @@ const TabsSlides = () => {
         <div className='block md:hidden flex-col  gap-5 justify-center items-start w-full'>
             <div className='  md:w-[29%] h-full flex justify-center items-center'>
                 <Image
-                    src={data[issameIndex].image}
+                    src={darkMode ? Appassets?.darkfronttabbanner2img : data[issameIndex].image}
                     alt="External Image"
                     width={1920}
                     height={1080}
