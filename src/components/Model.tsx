@@ -57,10 +57,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                                 />
                             </div>
                             <div className='flex flex-row justify-between items-center w-full'>
-                                <button type="submit" className='bg-content rounded-3xl md:py-4 text-white px-6 py-2 md:px-12 dark:text-black font-semibold text-center text-lg'>
+                                <button type="submit" className='bg-content rounded-3xl md:py-4 text-white px-6 py-2 md:px-12 dark:text-black font-medium text-center text-lg'>
                                     Submit
                                 </button>
-                                <button type="submit" onClick={onClose} className='bg-content text-white rounded-3xl md:py-4 md:px-12 px-6 py-2  dark:text-black font-semibold text-center text-lg'>
+                                <button type="submit" onClick={onClose} className='bg-content text-white rounded-3xl md:py-4 md:px-12 px-6 py-2  dark:text-black font-medium text-center text-lg'>
                                     Close
                                 </button>
                             </div>
