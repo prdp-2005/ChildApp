@@ -24,7 +24,7 @@ const Footer = () => {
                             <Image
                                 src={Appassets?.footerimg}
                                 alt="External Image"
-                                height={100}
+                                className='h-full w-full'
                             /></Link>
                         <p className='text-[#58595D] dark:text-white md:text-[32px] font-semibold text-2xl my-2 md:my-0'>
                             Parenting made easy!
