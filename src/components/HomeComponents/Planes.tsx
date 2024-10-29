@@ -28,7 +28,7 @@ const Planes = () => {
                 <h2 className="text-center font-semibold text-2xl lg:text-4xl mb-6 text-gray-800 dark:text-white ">
                     Pick Your Perfect Plan
                 </h2>
-                <div className="flex flex-wrap gap-8 justify-center">
+                <div className="flex flex-wrap gap-8 justify-center sm:w-[100%]">
                     {planesdata.map((item) => (
                         <div key={item.id} className="flex flex-col items-start justify-center gap-5 w-80 flex-wrap p-6 border rounded-[20px]  dark:bg-dark active:bg-[#1DF2F2] dark:active:bg-[#1DF2F2] active:border-[1px] active:border-black hover:shadow-teal cursor-pointer shadow-[34.854px_29.626px_48.34px_rgba(51,102,255,0.05)]">
                             <p className="text-lg lg:text-xl font-medium text-gray-700 dark:text-white">{item.planetype}</p>

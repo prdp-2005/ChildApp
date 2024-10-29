@@ -42,7 +42,7 @@ const Stories = () => {
         },
     ]
     return (
-        <div className='overflow-hidden w-full mx-auto py-12 px-4 lg:px-14 flex justify-center items-center'>
+        <div className='overflow-hidden w-full mx-auto py-12 px-4 lg:px-0 flex justify-center items-center'>
             <div className=' flex-col items-center w-[90%]'>
                 <h2 className='text-center font-semibold text-2xl lg:text-4xl mb-4'>
                     Real Stories from Satisfied Customers
@@ -54,12 +54,12 @@ const Stories = () => {
                     <StoryComponent storydata={data} />
                 </div>
                 <div className='block md:hidden'>
-                    <div className="carousel ">
+                    <div className="carousel border  rounded-[20px] ">
                         <Slider {...settings}>
 
                             {data.map((item, index) => (
                                 <div key={index} className=''>
-                                    <div className=' rounded-[20px] border flex flex-col gap-3 p-5 justify-center items-center h-[50vh]  dark:bg-dark mx-2 my-2 '>
+                                    <div className=' flex flex-col gap-3 p-5 justify-center items-center   mx-2 my-2 '>
                                         <Image
                                             src={item.image || Appassets.fronttabbanner4img}
                                             alt={item.title || "Story Image"}
@@ -67,7 +67,7 @@ const Stories = () => {
                                         />
                                         <h3 className='text-lg font-semibold'>{item.title}</h3>
                                         <p className='text-sm text-[#374151] dark:text-white text-center'>{item.subtitle}</p>
-                                        <p className='text-justify text-[#2D2D2D] dark:text-white text-base'>{item.desc}</p>
+                                        <p className='text-justify text-[#2D2D2D] dark:text-white text-base  '>{item.desc}</p>
                                         <div className='py-3'>
                                             {/* <ReactStars
                                     count={5}

@@ -24,16 +24,16 @@ const Whychild = () => {
         autoplaySpeed: 2000,
     };
     return (
-        <div className='overflow-hidden w-full mx-auto  py-12 px-7 md:px-14 lg:py-12 lg:px-5'>
+        <div className='overflow-hidden w-full mx-auto  pb-12 px-7 md:px-14 lg:py-12 lg:px-5'>
             <div className='md:flex  flex-col  items-center justify-center flex-wrap md:flex-nowrap gap-7'>
                 <p className='font-semibold text-2xl md:text-4xl  flex justify-center items-center my-5'>
                     Why Chilld?
                 </p>
-                <p className='md:text-lg text-sm font-normal  md:text-start'>These are just a few reasons why you’ll love the Chilld app!</p>
+                <p className='md:text-lg text-sm font-normal text-center lg:text-start px-2 sm:px-0'>These are just a few reasons why you’ll love the Chilld app!</p>
 
-                <div className='hidden md:block'>
-                    <div className='flex flex-row gap-8 justify-center items-start flex-wrap dark:shadow-custom '>
-                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
+                <div className='hidden md:block xl:mx-6'>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center items-start '>
+                        <div className='cursor-pointer dark:hover:shadow-teal flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg1}
                                 alt="External Image"
@@ -41,8 +41,8 @@ const Whychild = () => {
                             />
                             <p className='text-xs font-semibold [line-height: 24px;]'>Certified experts for every age.</p>
                         </div>
-                        </Link>
-                        <Link href={'/'}><div className='flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
+
+                        <div className='cursor-pointer dark:hover:shadow-teal flex flex-col gap-3 w-60 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg2}
                                 alt="External Image"
@@ -50,8 +50,8 @@ const Whychild = () => {
                             />
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Affordable expert knowledge.</p>
-                        </div></Link>
-                        <Link href={'/'}><div className='flex flex-col gap-3 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
+                        </div>
+                        <div className='cursor-pointer dark:hover:shadow-teal flex flex-col gap-3 h-40 justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B] shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg3}
                                 alt="External Image"
@@ -59,8 +59,8 @@ const Whychild = () => {
                             />
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Free knowledge in your pocket.</p>
-                        </div></Link>
-                        <Link href={'/'}><div className='flex flex-col w-60 h-40  justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B]  shadow-md hover:shadow-teal'>
+                        </div>
+                        <div className='cursor-pointer dark:shadow-custom flex dark:hover:shadow-teal flex-col w-60 h-40  justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B]  shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg4}
                                 alt="External Image"
@@ -69,7 +69,7 @@ const Whychild = () => {
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Your data is save.</p>
                         </div>
-                        </Link>
+
                     </div>
                 </div>
                 {/* slider for mobile  */}

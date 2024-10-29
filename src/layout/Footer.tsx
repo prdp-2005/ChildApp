@@ -11,21 +11,13 @@ import { TiSocialDribbble } from "react-icons/ti";
 import { FaBehance } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { useTheme } from '@/context/ThemeContext';
-import Modal from '@/components/Model';
 
 const Footer = () => {
-    const [isModalOpen, setIsModalOpen] = useState(false);
     const { darkMode } = useTheme();
-    const handleOpenModal = () => {
-        setIsModalOpen(true);
-    };
 
-    const handleCloseModal = () => {
-        setIsModalOpen(false);
-    };
     return (
         <div className='w-full overflow-hidden flex flex-wrap pb-3 lg:pb-5 lg:pt-28 lg:px-14 pt-12 px-5 justify-center items-center'>
-            <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center'>
+            <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center xl:w-[100%]'>
                 <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between gap-5 lg:gap-11'>
                     <div className='flex flex-col gap-3 justify-center items-center lg:items-start'>
                         <Link href='/'>
@@ -53,7 +45,7 @@ const Footer = () => {
                             /></Link>
                         </div>
                     </div>
-                    <div className='flex  mx-auto flex-wrap md:flex-nowrap justify-center items-start  gap-16 md:gap-8 lg:gap-40 mt-6 lg:flex-row'>
+                    <div className='flex  mx-auto flex-wrap md:flex-nowrap  sm:justify-center items-start  gap-16 md:gap-8 lg:gap-40 mt-8 lg:flex-row'>
                         <div className='flex flex-col gap-[27px] flex-wrap'>
                             <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold text-sm md:text-xl'>COMPANY</p></Link>
 
@@ -75,7 +67,7 @@ const Footer = () => {
                             </div>
 
                         </div>
-                        <div className='flex flex-col gap-[27px] flex-wrap -mt-12 sm:mt-0'>
+                        <div className='flex flex-col gap-[27px] flex-wrap  sm:mt-0'>
                             <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>Contact</p></Link>
 
                             <div className='flex  gap-2'>
@@ -113,9 +105,8 @@ const Footer = () => {
                             <Link href={'/'}><FaBehance size={24} /></Link>
                             <Link href={'/'}><FaTwitter size={24} /></Link>
                         </div>
-                        <Link href={'/'}><div onClick={handleOpenModal} className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold text'>Try chilld today</p>
+                        <Link href={'/'}><div className='  bg-[#1DF2F2] p-[8px] px-4 rounded-full cursor-pointer flex justify-center items-start '><p className='text-[16px] font-semibold text'>Try chilld today</p>
                         </div></Link>
-                        <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
                     </div>
                 </div>
             </div>
