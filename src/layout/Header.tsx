@@ -38,7 +38,7 @@ const Header = () => {
                                         <li key={item}>
                                             {item === 'TryChildToday' ? (
                                                 <Link href={'/'}><button
-                                                    className={`font-bold py-2 px-4 rounded-full transition-colors duration-200 ${(isActive || ismain) ? 'bg-[#1DF2F2] text-white' : 'hover:bg-[#1DF2F2] hover:text-white'
+                                                    className={`font-bold py-2 px-4 rounded-full transition-colors duration-200 ${(isActive || ismain) ? 'bg-[#1DF2F2] dark:text-white text-black' : 'hover:bg-[#1DF2F2] hover:dark:text-white hover:text-black'
                                                         }`}
                                                 >
                                                     {item}
@@ -47,7 +47,7 @@ const Header = () => {
                                             ) : (
                                                 <Link
                                                     href={href}
-                                                    className={`font-bold py-2 px-4 rounded-full transition-colors duration-200 ${isActive ? 'bg-[#1DF2F2] text-white' : 'hover:bg-[#1DF2F2] hover:text-white'
+                                                    className={`font-bold py-2 px-4 rounded-full transition-colors duration-200 ${isActive ? 'bg-[#1DF2F2] dark:text-white  text-black' : 'hover:bg-[#1DF2F2] hover:dark:text-white  hover:text-black'
                                                         }`}
                                                 >
                                                     {item}
