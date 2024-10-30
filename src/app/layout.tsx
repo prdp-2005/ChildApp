@@ -18,7 +18,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Chilld - Be a child Perent",
   description: "Parenting made easy",
-  manifest: '/manifest.webmanifest'
+  manifest: '/manifest.json'
 };
 
 export default function RootLayout({
