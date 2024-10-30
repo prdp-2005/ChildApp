@@ -7,7 +7,7 @@ import { useTheme } from '@/context/ThemeContext';
 const Banner = () => {
     const { darkMode } = useTheme();
     return (
-        < div className='overflow-hidden w-full  px-3 md:px-11  lg:px-5 flex justify-center items-center' >
+        < div className='overflow-hidden w-full mt-5  px-3 md:px-11  lg:px-5 flex justify-center items-center' >
             <div className='flex justify-between items-center flex-wrap md:flex-nowrap w-[70%] lg:-mt-4 '>
                 <div className='flex flex-col gap-4 order-2 md:order-1 justify-between items-start md:items-start'>
                     <div className='text-[#2D2D2D] dark:text-white font-semibold xl:text-5xl lg:text-3xl text-xl sm:text-2xl  text-start md:text-start items-stretch xl:leading-[64px] xl:tracking-[-0.56px]'>“Parenthood isn’t easy,<br /> We all need support
@@ -20,7 +20,7 @@ const Banner = () => {
                         src={darkMode ? Appassets?.maindarkbanner : Appassets?.mainlightbanner}
                         alt="External Image"
                         layout="responsive"
-                    />  
+                    />
                 </div>
             </div>
         </div >

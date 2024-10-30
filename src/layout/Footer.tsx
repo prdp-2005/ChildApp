@@ -58,7 +58,7 @@ const Footer = () => {
 
                         </div>
                         <div className='flex flex-col gap-[27px] flex-wrap'>
-                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>Information</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>INFORMATION</p></Link>
 
                             <div className='flex flex-col gap-[13px]'>
                                 <Link href={'/'}><p className='text-[#2E2F35] dark:text-white'>FAQ</p></Link>
@@ -68,7 +68,7 @@ const Footer = () => {
 
                         </div>
                         <div className='flex flex-col gap-[27px] flex-wrap  sm:mt-0'>
-                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>Contact</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>CONTACT</p></Link>
 
                             <div className='flex  gap-2'>
                                 <FaEnvelope size={24} className="text-[#2E2F35] dark:text-white" />
@@ -98,7 +98,7 @@ const Footer = () => {
                             <p className='text-[#58595D] text-[14px font-medium] dark:text-white'>© 2024 Chilld GmbH, All rights reserved.</p>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-5 md:flex-row  items-center justify-center'>
+                    <div className='flex flex-col gap-5 md:flex-row  items-center justify-center mb-11 md:mb-0'>
                         <div className='flex gap-[16px]'>
                             <Link href={'/'}><FaInstagram size={24} /></Link>
                             <Link href={'/'}><TiSocialDribbble size={24} /></Link>

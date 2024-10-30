@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Child - Be a child Perent",
+  title: "Chilld - Be a child Perent",
   description: "Parenting made easy",
 };
 

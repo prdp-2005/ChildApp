@@ -7,7 +7,7 @@ import { TiSocialDribbble } from 'react-icons/ti'
 
 const Faq = () => {
     return (
-        <div className='overflow-hidden w-[80%] mx-auto py-12 px-3 md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 my-6'>
+        <div className='overflow-hidden w-[80%] mx-auto py-12  md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 my-6'>
             {/* <div className=' my-3 text-center font-semibold text-2xl lg:text-4xl mb-6 text-gray-800 dark:text-white '>Todo: FAQ</div> */}
             <div className='flex flex-col w-full md:w-auto  justify-center items-start gap-14 md:border md:border-[#E5F4F2] md:px-14 py-8 p-2 rounded-2xl'>
                 <div className='flex flex-col justify-center text-start gap-3 md:items-start'>
