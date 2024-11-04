@@ -1,12 +1,13 @@
 // "use client";
-// import React, { ReactNode, useState, useEffect } from "react";
+
+// import React, { useState, useEffect } from "react";
 // import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-// interface ThemeProviderProps {
-//     children: ReactNode;
-// }
+// // interface ThemeProviderProps {
+// //     children: ReactNode;
+// // }
 
-// export default function ThemeProvider({ children }: ThemeProviderProps) {
+// export default function ThemeProvider({ children, ...props }: any) {
 //     const [isMounted, setIsMounted] = useState(false);
 
 //     useEffect(() => {
@@ -18,27 +19,24 @@
 //     }
 
 //     return (
-//         <NextThemesProvider
-//             attribute="class"
-//             defaultTheme="system"
-//             enableSystem
-//             disableTransitionOnChange={true}
+//         <NextThemesProvider {...props}
+//         // disableTransitionOnChange={true}
 //         >
 //             {children}
 //         </NextThemesProvider>
 //     );
-// }
+// };
 
 "use client";
 
-import React, { ReactNode, useState, useEffect } from "react";
+import React, { useState, useEffect, ReactNode } from "react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
-// interface ThemeProviderProps {
-//     children: ReactNode;
-// }
+interface ThemeProviderProps {
+    children: ReactNode;
+}
 
-export default function ThemeProvider({ children, ...props }: any) {
+const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, ...props }) => {
     const [isMounted, setIsMounted] = useState(false);
 
     useEffect(() => {
@@ -50,11 +48,10 @@ export default function ThemeProvider({ children, ...props }: any) {
     }
 
     return (
-        <NextThemesProvider {...props}
-        // disableTransitionOnChange={true}
-        >
+        <NextThemesProvider {...props}>
             {children}
         </NextThemesProvider>
     );
 };
 
+export default ThemeProvider;
