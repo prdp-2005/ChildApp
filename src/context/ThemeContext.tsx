@@ -26,15 +26,14 @@
 //         </NextThemesProvider>
 //     );
 // };
-
 "use client";
-
 import React, { useState, useEffect, ReactNode } from "react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
+type AttributeType = 'class' | 'data-theme'; 
 
 interface ThemeProviderProps {
     children: ReactNode;
-    attribute?: any;
+    attribute?: AttributeType; 
     defaultTheme?: string;
     enableSystem?: boolean;
 }
