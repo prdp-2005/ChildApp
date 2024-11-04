@@ -60,7 +60,7 @@ const Whychild = () => {
 
                             <p className='text-xs font-semibold [line-height: 24px;]'>Free knowledge in your pocket.</p>
                         </div>
-                        <div className='cursor-pointer dark:shadow-custom flex dark:hover:shadow-teal flex-col w-60 h-40  justify-between items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B]  shadow-md hover:shadow-teal'>
+                        <div className='cursor-pointer dark:shadow-custom flex dark:hover:shadow-teal flex-col w-60 h-40  justify-center items-center py-10 px-7 rounded-[20px] border border-white  dark:bg-[#0E121B]  shadow-md hover:shadow-teal'>
                             <Image
                                 src={Appassets?.whychildimg4}
                                 alt="External Image"
