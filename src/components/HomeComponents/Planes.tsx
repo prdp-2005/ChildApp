@@ -4,9 +4,9 @@ import { FaCheck } from "react-icons/fa6";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 const Planes = () => {
-    const [selectedIndex, setSelectedIndex] = useState(null);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
 
-    const handleClick = (index: any) => {
+    const handleClick = (index: number) => {
         setSelectedIndex(index);
     };
 
