@@ -2,10 +2,12 @@
 import React from 'react';
 import TabBanners from '../TabBanner';
 import { Appassets } from '@/constants/Appassets';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 
 const Tabs = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
 
     const data = [
         {

@@ -5,11 +5,13 @@ import Link from 'next/link';
 import { Appassets } from '@/constants/Appassets';
 import Sidebar from './Sidebar';
 import ThemeToggle from '@/components/ThemeToggle';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 import Language from '@/components/Lanugauge';
 import { usePathname } from 'next/navigation';
 const Header = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     const pathname = usePathname();
     const menus = ['Experts', 'About', 'TryChildToday'];
     return (

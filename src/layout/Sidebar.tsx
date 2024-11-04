@@ -7,7 +7,8 @@
 // import { useTheme } from '@/context/ThemeContext'
 
 // const Sidebar = () => {
-//     const { darkMode } = useTheme();
+//     const { theme } = useTheme();
+//const darkMode = theme === 'dark';
 
 //     const menus = ['Experts', 'About', 'Try Child Today'];
 //     const [isMenuOpen, setMenuOpen] = useState(false);
@@ -79,12 +80,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Appassets } from '@/constants/Appassets';
 import ThemeToggle from '@/components/ThemeToggle';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 import Lanugauge from '@/components/Lanugauge';
 import { usePathname } from 'next/navigation';
 import { useClickAway } from 'react-use';
 const Sidebar = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     const dropdownRef = useRef(null);
     useClickAway(dropdownRef, () => setMenuOpen(false));
     const pathname = usePathname();

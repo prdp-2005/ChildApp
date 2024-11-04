@@ -5,10 +5,11 @@
 // import 'slick-carousel/slick/slick-theme.css';
 // import { Appassets } from '@/constants/Appassets';
 // import Image from 'next/image';
-// import { useTheme } from '@/context/ThemeContext';
+// import { useTheme } from 'next-themes';
 
 // const TabsSlides = () => {
-//     const { darkMode } = useTheme();
+//     const { theme } = useTheme();
+//const darkMode = theme === 'dark';
 //     const data = [
 //         {
 //             id: 1,

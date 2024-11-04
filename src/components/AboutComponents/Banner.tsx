@@ -2,10 +2,12 @@
 import React from 'react'
 import Image from 'next/image'
 import { Appassets } from '@/constants/Appassets';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 
 const Banner = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     return (
         < div className='overflow-hidden w-full mt-5  px-3 md:px-11  lg:px-5 flex justify-center items-center' >
             <div className='flex justify-between items-center flex-wrap md:flex-nowrap w-[70%] lg:-mt-4 '>

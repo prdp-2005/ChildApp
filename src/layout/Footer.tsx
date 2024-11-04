@@ -10,11 +10,12 @@ import { FaInstagram } from "react-icons/fa";
 import { TiSocialDribbble } from "react-icons/ti";
 import { FaBehance } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 
 const Footer = () => {
-    const { darkMode } = useTheme();
-
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     return (
         <div className='w-full overflow-hidden flex flex-wrap pb-3 lg:pb-5 lg:pt-28 lg:px-14 pt-12 px-5 justify-center items-center'>
             <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center xl:w-[100%]'>

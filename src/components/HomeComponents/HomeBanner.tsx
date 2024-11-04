@@ -3,10 +3,11 @@
 // import Link from 'next/link'
 // import Image from 'next/image'
 // import { Appassets } from '@/constants/Appassets';
-// import { useTheme } from '@/context/ThemeContext';
+// import { useTheme } from 'next-themes';
 
 // const Banner = () => {
-//     const { darkMode } = useTheme();
+//     const { theme } = useTheme();
+//const darkMode = theme === 'dark';
 //     return (
 //         < div className='overflow-hidden w-full mx-auto  py-12 px-14 lg:py-12 lg:px-5' >
 //             <div className='flex justify-center items-center flex-wrap md:flex-nowrap'>
@@ -42,12 +43,14 @@
 
 // export default Banner
 "use client"
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 import React from 'react'
 import Banner from '../Banner';
 
 const HomeBanner = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     return (
         <>
             <Banner

@@ -5,7 +5,8 @@
 // import TabsSlides from './TabsSlides'
 // import { useTheme } from '@/context/ThemeContext'
 // const TabBanners = () => {
-//     const { darkMode } = useTheme();
+//     const { theme } = useTheme();
+//const darkMode = theme === 'dark';
 //     const data = [
 //         {
 //             id: 1,

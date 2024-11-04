@@ -1,11 +1,13 @@
 "use client"
 import React from 'react'
 import { Appassets } from '@/constants/Appassets'
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 import TabBanners from '../TabBanner';
 
 const Tabs = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     const data = [
         {
             id: 1,

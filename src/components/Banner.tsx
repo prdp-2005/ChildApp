@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Appassets } from '@/constants/Appassets';
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 
 
 interface BannerProps {
@@ -15,7 +15,9 @@ interface BannerProps {
 }
 
 const Banner: React.FC<BannerProps> = ({ title, type, subheading1, subheading2 }) => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     return (
         <div className="overflow-hidden w-full mt-11 mx-auto pt-24 px-2 lg:pb-12 lg:px-5 flex justify-center items-center">
             <div className="flex justify-center md:w-[90%] items-center flex-wrap md:flex-nowrap  w-full max-w-screen-lg">

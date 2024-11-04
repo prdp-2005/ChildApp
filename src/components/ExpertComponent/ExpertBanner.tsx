@@ -1,10 +1,12 @@
 "use client"
-import { useTheme } from '@/context/ThemeContext';
+import { useTheme } from 'next-themes';
 import React from 'react'
 import Banner from '../Banner';
 
 const ExpertBanner = () => {
-    const { darkMode } = useTheme();
+    const { theme, systemTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+    const darkMode = currentTheme === 'dark';
     return (
         <>
             <Banner
