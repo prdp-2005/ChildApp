@@ -34,6 +34,9 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 interface ThemeProviderProps {
     children: ReactNode;
+    attribute?: any;
+    defaultTheme?: string;
+    enableSystem?: boolean;
 }
 
 const ThemeProvider: React.FC<ThemeProviderProps> = ({ children, ...props }) => {
