@@ -98,7 +98,7 @@ const Sidebar = () => {
         <div ref={dropdownRef} className="relative">
             <div className="sm:hidden block fixed top-2  z-50 w-full">
                 <div className="border border-black dark:border dark:border-[#1DF2F2] z-50 w-full flex justify-between items-center p-4 bg-white shadow-sm dark:bg-dark rounded-full">
-                    <Link href="/" aria-label="Home">
+                    <Link href="/">
                         <Image
                             src={darkMode ? Appassets?.darkmodelogo : Appassets?.logo}
                             alt="Logo"
@@ -110,7 +110,6 @@ const Sidebar = () => {
                     <button
                         className="focus:outline-none"
                         onClick={toggleMenu}
-                        aria-label="Toggle menu"
                     >
                         <svg
                             className="w-6 h-6"
@@ -135,7 +134,7 @@ const Sidebar = () => {
                             const ismain = pathname === '/';
 
                             return (
-                                <li key={item}>
+                                <li onClick={() => setMenuOpen(false)} key={item}>
                                     {item === 'TryChildToday' ? (
                                         <Link href={'/'}><button
                                             className={`font-bold py-2 px-4 rounded-full transition-colors duration-200 ${(isActive || ismain) ? 'bg-[#1DF2F2] text-white' : 'hover:bg-[#1DF2F2] hover:text-white'

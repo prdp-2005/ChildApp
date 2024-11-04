@@ -47,7 +47,7 @@ const Footer = () => {
                     </div>
                     <div className='flex  mx-auto flex-wrap md:flex-nowrap  sm:justify-center items-start  gap-16 md:gap-8 lg:gap-40 mt-8 lg:flex-row'>
                         <div className='flex flex-col gap-[27px] flex-wrap'>
-                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold text-sm md:text-xl'>COMPANY</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold text-sm md:text-lg'>COMPANY</p></Link>
 
                             <div className='flex flex-col gap-[13px]'>
                                 <Link href={'/'}><p className='text-[#2E2F35] dark:text-white '>Experts</p></Link>
@@ -58,7 +58,7 @@ const Footer = () => {
 
                         </div>
                         <div className='flex flex-col gap-[27px] flex-wrap'>
-                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>INFORMATION</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold text-sm md:text-lg'>INFORMATION</p></Link>
 
                             <div className='flex flex-col gap-[13px]'>
                                 <Link href={'/'}><p className='text-[#2E2F35] dark:text-white'>FAQ</p></Link>
@@ -68,7 +68,7 @@ const Footer = () => {
 
                         </div>
                         <div className='flex flex-col gap-[27px] flex-wrap  sm:mt-0'>
-                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold'>CONTACT</p></Link>
+                            <Link href={'/'}><p className='text-[#2E2F35] dark:text-white font-semibold text-sm md:text-lg'>CONTACT</p></Link>
 
                             <div className='flex  gap-2'>
                                 <FaEnvelope size={24} className="text-[#2E2F35] dark:text-white" />
