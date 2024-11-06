@@ -1,13 +1,19 @@
-// next.config.js
 const withPWA = require('next-pwa')({
   dest: 'public',
   register: true,
   skipWaiting: true,
-  // Other configurations can be added here
 });
 
 const nextConfig = {
-  // Additional Next.js config options can go here
+  async redirects() {
+    return [
+      {
+        source: "/",
+        destination: "/en",
+        permanent: false,
+      },
+    ];
+  },
 };
 
 module.exports = withPWA(nextConfig);

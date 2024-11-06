@@ -25,7 +25,7 @@ const StoryComponent: React.FC<StoryComponentProps> = ({ storydata }) => {
                     />
                     <h3 className='text-lg font-semibold'>{story.title}</h3>
                     <p className='text-sm text-[#374151] dark:text-white text-center'>{story.subtitle}</p>
-                    <p className='text-justify text-[#2D2D2D] dark:text-white text-base'>{story.desc}</p>
+                    <p className='text-center text-[#2D2D2D] dark:text-white text-base'>{story.desc}</p>
                     <div className='py-3'>
                         {/* <ReactStars
                             count={5}
