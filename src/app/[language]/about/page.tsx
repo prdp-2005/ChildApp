@@ -1,12 +1,12 @@
 import Banner from '@/components/AboutComponents/Banner'
 import React from 'react'
-import Faq from '@/components/HomeComponents/Faq'
+import Contact from '@/components/HomeComponents/contact'
 
 const About = () => {
   return (
     <>
       <Banner />
-      <Faq />
+      <Contact />
     </>
   )
 }

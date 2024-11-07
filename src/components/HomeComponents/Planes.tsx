@@ -98,9 +98,14 @@
 import { LanguageContext } from '@/constants/providers/LanguageContext';
 import { static_text } from '@/constants/translations/Translations';
 import React, { useContext, useState } from 'react';
-import Plane from '../Plane';
 
-const Planes = () => {
+import Plane from '../Plane';
+interface StoriesProps {
+    text: string;
+    gtext: string;
+}
+
+const Planes: React.FC<StoriesProps> = ({ text, gtext }) => {
     const { slug } = useContext(LanguageContext);
     const [mounted, setMounted] = useState(false);
     const [selectedIndex, setSelectedIndex] = useState<number | null>(0);
@@ -112,6 +117,7 @@ const Planes = () => {
     const handleClick = (index: number) => {
         setSelectedIndex(index);
     }
+    const title = slug === 'en' ? text : gtext;
 
     // const planesdata = [
     //     {
@@ -148,7 +154,7 @@ const Planes = () => {
             id: 1,
             planetype: static_text.find(item => item.id === 45)?.data.find(dataItem => dataItem.language === slug)?.text || 'Child Parent',
             price: mounted
-                ? (slug === 'en' ? '$14.90 ' : '€14.90 ')
+                ? (slug === 'en' ? '$99.84 ' : '€99.84 ')
                 : (slug === 'en' ? '$8.32 ' : '€8.32 '),
             desc: static_text.find(item => item.id === 47)?.data.find(dataItem => dataItem.language === slug)?.text || 'Ideal for Growing Companies.',
             f1: static_text.find(item => item.id === 83)?.data.find(dataItem => dataItem.language === slug)?.text || 'Everything from “Free”',
@@ -161,7 +167,7 @@ const Planes = () => {
         <div className="overflow-hidden w-full mx-auto py-12 px-14 lg:py-12 lg:px-5 flex justify-center items-center flex-wrap">
             <div className="flex flex-col items-center w-full lg:w-[90%] gap-10 justify-center max-w-7xl">
                 <h2 className="text-center font-semibold text-2xl lg:text-4xl mb-6 text-gray-800 dark:text-white">
-                    {slug === 'en' ? "Pick Your Perfect Plan" : "Wählen Sie Ihren perfekten Plan"}
+                    {title}
                 </h2>
                 <div className='flex flex-row gap-6 justify-between items-center'>
                     <p className='text-base font-semibold'>{slug === 'en' ? "Month" : "Monat"}</p>

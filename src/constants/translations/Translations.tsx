@@ -630,4 +630,152 @@ export const static_text = [
       { language: 'de', text: '24/7-Experte „Chillo“ (KI-Assistent)' },
     ]
   },
+  {
+    id: 86,
+    data: [
+      { language: 'en', text: 'How much will it cost me?' },
+      { language: 'de', text: 'Wie viel wird es mich kosten?' },
+    ]
+  },
+  {
+    id: 87,
+    data: [
+      { language: 'en', text: 'Parents can test Chilld one week for free. Then you will have to pay our subscription fee. LINK. Additional session costs will apply.' },
+      { language: 'de', text: 'Eltern können Chilld eine Woche lang kostenlos testen. Dann müssen Sie unsere Abonnementgebühr bezahlen. LINK. Es fallen zusätzliche Sitzungskosten an.' },
+    ]
+  },
+  {
+    id: 88,
+    data: [
+      { language: 'en', text: 'Will I need to register?' },
+      { language: 'de', text: 'Muss ich mich registrieren?' },
+    ],
+  },
+  {
+    id: 89,
+    data: [
+      { language: 'en', text: 'Yes. A registration is necessary to make the most out of the app experience.' },
+      { language: 'de', text: 'Ja. Eine Registrierung ist notwendig, um das Beste aus der App-Erfahrung herauszuholen.' },
+    ],
+  },
+  // FAQ 3
+  {
+    id: 90,
+    data: [
+      { language: 'en', text: 'Why shouldn’t I use LinkedIn to find a coach?' },
+      { language: 'de', text: 'Warum sollte ich LinkedIn nicht verwenden, um einen Coach zu finden?' },
+    ],
+  },
+  {
+    id: 91,
+    data: [
+      { language: 'en', text: 'You can totally do that. In our experience, mouth-to-mouth recommendations between friends work better than finding strangers on LinkedIn. If you want to get parenting experts on different topics, we have some recommendations for you, and you can even bring your friends.' },
+      { language: 'de', text: 'Das können Sie gerne tun. Unserer Erfahrung nach funktionieren Mundpropaganda und Empfehlungen zwischen Freunden besser als die Suche nach Fremden auf LinkedIn. Wenn Sie Elternexperten zu verschiedenen Themen suchen, haben wir einige Empfehlungen für Sie, und Sie können sogar Ihre Freunde mitbringen.' },
+    ],
+  },
+  // FAQ 4
+  {
+    id: 92,
+    data: [
+      { language: 'en', text: 'Why do I need to pay in advance?' },
+      { language: 'de', text: 'Warum muss ich im Voraus bezahlen?' },
+    ],
+  },
+  {
+    id: 93,
+    data: [
+      { language: 'en', text: 'We want to have the best possible experience for all, both parents and experts. Additionally, group sessions and events only have a limited number of seats. Therefore we require reliable bookings, so your seat will only be reserved after payment.' },
+      { language: 'de', text: 'Wir möchten das bestmögliche Erlebnis für alle bieten, sowohl für Eltern als auch für Experten. Gruppenveranstaltungen haben zudem eine begrenzte Anzahl an Plätzen. Daher benötigen wir zuverlässige Buchungen, sodass Ihr Platz nur nach Zahlung reserviert wird.' },
+    ],
+  },
+  // FAQ 5
+  {
+    id: 94,
+    data: [
+      { language: 'en', text: 'How safe are my data with Chilld?' },
+      { language: 'de', text: 'Wie sicher sind meine Daten bei Chilld?' },
+    ],
+  },
+  {
+    id: 95,
+    data: [
+      { language: 'en', text: 'Protecting your data is one of our top priorities. That’s why we only process essential data, which again we do with absolute care to avoid any leaks and mishaps. All Chilld data are stored and processed on German or EU servers in line with the GDPR. You can find more details in our privacy statement.' },
+      { language: 'de', text: 'Der Schutz Ihrer Daten ist für uns eine der obersten Prioritäten. Deshalb verarbeiten wir nur die notwendigen Daten und tun dies mit größter Sorgfalt, um Lecks und Missgeschicke zu vermeiden. Alle Chilld-Daten werden auf deutschen oder EU-Servern gemäß der DSGVO gespeichert und verarbeitet. Mehr Details finden Sie in unserer Datenschutzerklärung.' },
+    ],
+  },
+  // FAQ 6
+  {
+    id: 96,
+    data: [
+      { language: 'en', text: 'How much does Chilld cost?' },
+      { language: 'de', text: 'Wie viel kostet Chilld?' },
+    ],
+  },
+  {
+    id: 97,
+    data: [
+      { language: 'en', text: 'Chilld parents can use Chilld for free. You just pay for the coaching or workshops you book. For coaches, we offer two attractive memberships at very low rates: the Basic and Premium membership.' },
+      { language: 'de', text: 'Eltern können Chilld kostenlos nutzen. Sie zahlen nur für die Coachings oder Workshops, die Sie buchen. Für Coaches bieten wir zwei attraktive Mitgliedschaften zu sehr günstigen Konditionen: die Basis- und die Premium-Mitgliedschaft.' },
+    ],
+  },
+  // FAQ 7
+  {
+    id: 98,
+    data: [
+      { language: 'en', text: 'When is the payment due for a coaching session?' },
+      { language: 'de', text: 'Wann ist die Zahlung für eine Coaching-Sitzung fällig?' },
+    ],
+  },
+  {
+    id: 99,
+    data: [
+      { language: 'en', text: 'Chilld parents pay for sessions before, using Stripe, PayPal, credit card, or in-app payment.' },
+      { language: 'de', text: 'Eltern zahlen Sitzungen im Voraus per Stripe, PayPal, Kreditkarte oder In-App-Zahlung.' },
+    ],
+  },
+  // FAQ 8
+  {
+    id: 100,
+    data: [
+      { language: 'en', text: 'What happens if the parent cancels a session at the last minute?' },
+      { language: 'de', text: 'Was passiert, wenn der Elternteil eine Sitzung in letzter Minute absagt?' },
+    ],
+  },
+  {
+    id: 101,
+    data: [
+      { language: 'en', text: 'If the session is canceled 24h+ before the session, the cancellation won’t invoke costs. If the cancellation takes place after, the full fee may be charged.' },
+      { language: 'de', text: 'Wenn die Sitzung mehr als 24 Stunden vorher abgesagt wird, entstehen keine Kosten. Erfolgt die Absage später, kann die volle Gebühr anfallen.' },
+    ],
+  },
+  // FAQ 9
+  {
+    id: 102,
+    data: [
+      { language: 'en', text: 'What happens if the expert cancels at the last minute?' },
+      { language: 'de', text: 'Was passiert, wenn der Experte in letzter Minute absagt?' },
+    ],
+  },
+  {
+    id: 103,
+    data: [
+      { language: 'en', text: 'If the expert cancels 24h+ before the session, the cancellation is valid. If he cancels after, he is contractually obliged to hold the session or offer an alternative timeslot.' },
+      { language: 'de', text: 'Wenn der Experte mehr als 24 Stunden vorher absagt, ist die Absage gültig. Erfolgt die Absage später, ist er vertraglich verpflichtet, die Sitzung abzuhalten oder einen Alternativtermin anzubieten.' },
+    ],
+  },
+  // FAQ 10
+  {
+    id: 104,
+    data: [
+      { language: 'en', text: 'Who is my contractual partner?' },
+      { language: 'de', text: 'Wer ist mein Vertragspartner?' },
+    ],
+  },
+  {
+    id: 105,
+    data: [
+      { language: 'en', text: 'For parents and experts, the contractual partner is always Chilld GmbH & Co.KG, the operator of Chilld. We will handle all payments and be your contact for all upcoming issues.' },
+      { language: 'de', text: 'Für Eltern und Experten ist der Vertragspartner immer die Chilld GmbH & Co.KG, der Betreiber von Chilld. Wir kümmern uns um alle Zahlungen und sind Ihr Ansprechpartner für alle anstehenden Fragen.' },
+    ],
+  },
 ];

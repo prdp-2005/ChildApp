@@ -6,7 +6,7 @@ import { LanguageContext } from '@/constants/providers/LanguageContext';
 import { static_text } from '@/constants/translations/Translations';
 import { MdOutlineMail } from 'react-icons/md';
 
-const Faq = () => {
+const Contact = () => {
     const { slug } = useContext(LanguageContext);
 
     const heading = static_text.find(item => item.id === 55)?.data.find(dataItem => dataItem.language === slug)?.text || 'Let’s get in touch!';
@@ -18,7 +18,6 @@ const Faq = () => {
     const submitButton = static_text.find(item => item.id === 61)?.data.find(dataItem => dataItem.language === slug)?.text || 'Submit';
     return (
         <div className='overflow-hidden w-[80%] h-auto mx-auto pt-12  md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 my-6'>
-            {/* <div className=' my-3 text-center font-semibold text-2xl lg:text-4xl mb-6 text-gray-800 dark:text-white '>Todo: FAQ</div> */}
             <div className='flex flex-col w-full md:w-auto  justify-center items-start gap-14 md:border md:border-[#E5F4F2] md:px-14 py-8 p-2 rounded-2xl'>
                 <div className='flex flex-col justify-center text-start gap-3 md:items-start'>
                     <p className='font-semibold text-2xl sm:text-3xl md:text-4xl text-[#2D2D2D] text-wrap text-center md:text-start dark:text-white'>{heading}</p>
@@ -56,9 +55,9 @@ const Faq = () => {
                                     required
                                 />
                             </div>
-                            <div className='flex items-start gap-3 border border-[#D8D8D8] rounded-lg w-full sm:w-[420px] h-auto px-2 py-2 '>
+                            <div className='flex items-start gap-3 border border-[#D8D8D8] rounded-[20px] w-full sm:w-[420px] h-auto px-2 py-2 '>
                                 <textarea
-                                    className='text-[#2D2D2D] font-normal text-base outline-none w-full dark:bg-dark dark:text-white h-auto overflow-hidden'
+                                    className='text-[#2D2D2D] font-normal text-base outline-none w-full dark:bg-dark dark:text-white overflow-hidden h-28'
                                     placeholder={messagePlaceholder}
                                     name="message"
                                     required
@@ -76,4 +75,4 @@ const Faq = () => {
     )
 }
 
-export default Faq
+export default Contact

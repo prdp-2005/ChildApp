@@ -189,7 +189,11 @@ import Image from 'next/image';
 import { LanguageContext } from '@/constants/providers/LanguageContext';
 import { static_text } from '@/constants/translations/Translations';
 
-const Stories = () => {
+interface StoriesProps {
+    text: string;
+    gtext: string;
+}
+const Stories: React.FC<StoriesProps> = ({ text, gtext }) => {
     const { slug } = useContext(LanguageContext);
 
     const settings = {
@@ -202,7 +206,7 @@ const Stories = () => {
         autoplaySpeed: 2000,
         arrows: false,
     };
-
+    const title = slug === 'en' ? text : gtext;
     const data = [
         {
             id: 1,
@@ -231,7 +235,7 @@ const Stories = () => {
         <div className='overflow-hidden w-full mx-auto py-12 px-4 lg:px-0 flex justify-center items-center'>
             <div className='flex-col items-center w-[90%]'>
                 <h2 className='text-center font-semibold text-2xl lg:text-4xl mb-4'>
-                    {slug === 'en' ? "Real Stories from Satisfied Experts and Coaches" : "Echte Geschichten von zufriedenen Experten und Coaches"}
+                    {title}
                 </h2>
                 <p className='text-[#2D2D2D] text-center text-base mb-6 md:my-12 dark:text-white'>
                     {slug === 'en' ? "See how Chilld is making an impact." : "Sehen Sie, wie Chilld einen Unterschied macht."}
