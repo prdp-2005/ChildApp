@@ -103,7 +103,7 @@ import Plane from '../Plane';
 const Planes = () => {
     const { slug } = useContext(LanguageContext);
     const [mounted, setMounted] = useState(false);
-    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(0);
 
     const handleToggle = () => {
         setMounted(!mounted);
@@ -136,7 +136,7 @@ const Planes = () => {
 
     const planesdata = [
         {
-            id: 1,
+            id: 0,
             planetype: static_text.find(item => item.id === 42)?.data.find(dataItem => dataItem.language === slug)?.text || "Free",
             price: static_text.find(item => item.id === 43)?.data.find(dataItem => dataItem.language === slug)?.text || '$0',
             desc: static_text.find(item => item.id === 44)?.data.find(dataItem => dataItem.language === slug)?.text || 'No-brainer for every parent',
@@ -145,7 +145,7 @@ const Planes = () => {
             f3: static_text.find(item => item.id === 82)?.data.find(dataItem => dataItem.language === slug)?.text || 'Join free events',
         },
         {
-            id: 2,
+            id: 1,
             planetype: static_text.find(item => item.id === 45)?.data.find(dataItem => dataItem.language === slug)?.text || 'Child Parent',
             price: mounted
                 ? (slug === 'en' ? '$14.90 ' : '€14.90 ')

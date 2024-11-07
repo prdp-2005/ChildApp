@@ -37,8 +37,6 @@
 "use client";
 import React, { useContext, useState, useRef, FC } from 'react';
 import { CiGlobe } from 'react-icons/ci';
-import { RiEnglishInput } from 'react-icons/ri';
-import { CiFlag1 } from 'react-icons/ci';
 import { useClickAway } from 'react-use';
 import { useRouter } from 'next/navigation';
 import { LanguageContext } from '@/constants/providers/LanguageContext';
@@ -55,8 +53,8 @@ const translations = {
 };
 
 const languageIcons = {
-    en: <RiEnglishInput />,
-    de: <CiFlag1 />,
+    en: 'En',
+    de: 'De',
 };
 
 const LanguageToggle: FC = () => {
@@ -79,28 +77,30 @@ const LanguageToggle: FC = () => {
         <div ref={dropdownRef} className="relative">
             <div
                 onClick={() => setIsOpen(!isOpen)}
-                className="flex flex-row gap-1 p-2 border border-black dark:border-white rounded-3xl cursor-pointer"
+                className="flex flex-row gap-1 p-2 border border-black dark:border-white rounded-3xl cursor-pointer justify-center items-center"
             >
-                <CiGlobe />
-                {languageIcons[slug as Language]}
+                <div className='text-s flex flex-row justify-between items-center gap-1 h-3'>
+                    <CiGlobe />
+                    {languageIcons[slug as Language]}
+                </div>
             </div>
 
             {isOpen && (
-                <div className="absolute left-0 mt-2 p-2 bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg">
+                <div className="absolute left-0 mt-2 p-2 bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg w-28 z-50">
                     <ul className="space-y-2">
                         <li
                             onClick={() => handleLanguageChange('en')}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out flex items-center gap-2 cursor-pointer'
                         >
                             {languageIcons['en']}
-                            <span>{translations[slug as Language].english}</span>
+                            <span>| {translations[slug as Language].english}</span>
                         </li>
                         <li
                             onClick={() => handleLanguageChange('de')}
                             className='hover:scale-105 transition-transform duration-200 ease-in-out flex items-center gap-2 cursor-pointer'
                         >
                             {languageIcons['de']}
-                            <span>{translations[slug as Language].german}</span>
+                            <span>| {translations[slug as Language].german}</span>
                         </li>
                     </ul>
                 </div>

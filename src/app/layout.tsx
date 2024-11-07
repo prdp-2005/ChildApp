@@ -5,6 +5,7 @@ import Header from "@/layout/Header";
 import Footer from "../layout/Footer";
 import ThemeProvider from "@/context/ThemeContext";
 import LanguageProvider from "@/constants/providers/LanguageProvider";
+import ThemeToggle from '@/components/ThemeToggle';
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -40,6 +41,9 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
+            <div className='fixed bottom-2 left-5 sm:hidden'>
+              <ThemeToggle />
+            </div>
           </ThemeProvider>
         </LanguageProvider>
       </body>
