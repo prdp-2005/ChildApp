@@ -8,7 +8,6 @@ import { MdOutlineMail } from 'react-icons/md';
 
 const Contact = () => {
     const { slug } = useContext(LanguageContext);
-
     const heading = static_text.find(item => item.id === 55)?.data.find(dataItem => dataItem.language === slug)?.text || 'Let’s get in touch!';
     const description = static_text.find(item => item.id === 56)?.data.find(dataItem => dataItem.language === slug)?.text || 'Got questions about the chilld app? Our team is here to help. Contact us for quick and friendly support.';
     const connectWithUs = static_text.find(item => item.id === 57)?.data.find(dataItem => dataItem.language === slug)?.text || 'Connect with us';
@@ -27,10 +26,10 @@ const Contact = () => {
                     <div className='flex flex-col gap-7 justify-center items-center'>
                         <p className='text-xl text-start font-semibold text-[#2D2D2D] dark:text-white'>{connectWithUs}</p>
                         <div className='flex gap-[16px]'>
-                            <Link href={'/'}><FaInstagram size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
-                            <Link href={'/'}><FaMedium size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
-                            <Link href={'/'}><FaLinkedin size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
-                            <Link href={'/'}><FaFacebook size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
+                            <Link href={'https://www.instagram.com/chilld_official/'} target='_blank'><FaInstagram size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
+                            <Link href={'https://medium.com/@chilld_official'} target='_blank'><FaMedium size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
+                            <Link href={'https://www.linkedin.com/company/chilld-app/'} target='_blank'><FaLinkedin size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
+                            <Link href={'https://www.facebook.com/people/Chilld/61566926630273/'} target='_blank'><FaFacebook size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>
                         </div>
                     </div>
                     <div className='flex flex-col gap-5 items-center w-full justify-center xl:items-end h-full'>
