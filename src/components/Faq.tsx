@@ -131,8 +131,8 @@ const Faq = () => {
     return (
         <>
             <div className="overflow-hidden w-full h-auto mx-auto pt-12 md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 my-6">
-                <div className="my-3 text-center font-semibold text-2xl lg:text-4xl mb-12 text-gray-800 dark:text-white">
-                    {slug === 'en' ? 'Todo: FAQ' : 'Todo: FAQ '}
+                <div className="my-3 text-center font-semibold text-2xl lg:text-4xl mb-24 text-gray-800 dark:text-white">
+                    {slug === 'en' ? 'Frequently Asked Questions' : 'Häufig gestellte Fragen '}
                 </div>
 
                 {/* {data.map((item) =>

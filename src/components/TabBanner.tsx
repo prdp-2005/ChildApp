@@ -118,7 +118,7 @@ const TabBanners: React.FC<TabBannersProps> = ({ data, darkMode, heading }) => {
         setIsHovered(false)
     }
     return (
-        <div className="overflow-hidden w-full mx-auto py-12 px-14 lg:py-12 lg:px-5">
+        <div className="overflow-hidden w-full mx-auto py-12 px-14 lg:py-12 lg:px-5 my-6">
             <div className="flex flex-col items-center justify-center md:flex-nowrap">
                 <p className="font-semibold text-2xl lg:text-4xl flex justify-center items-center my-5 mx-3 text-wrap">
                     {heading}

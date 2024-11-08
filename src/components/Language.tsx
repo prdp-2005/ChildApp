@@ -86,21 +86,23 @@ const LanguageToggle: FC = () => {
             </div>
 
             {isOpen && (
-                <div className="absolute left-0 mt-2 p-2 bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg w-28 z-50">
+                <div className="absolute left-0 mt-2 p-2 bg-white dark:bg-black border border-gray-200 dark:border-gray-700 rounded-lg shadow-lg w-fit z-50">
                     <ul className="space-y-2">
                         <li
                             onClick={() => handleLanguageChange('en')}
-                            className='hover:scale-105 transition-transform duration-200 ease-in-out flex items-center gap-2 cursor-pointer'
+                            className=' hover:scale-105 transition-transform duration-200 justify-center ease-in-out flex items-center gap-2 cursor-pointer'
                         >
                             {languageIcons['en']}
-                            <span>| {translations[slug as Language].english}</span>
+                            <div>|</div>
+                            <span>{translations[slug as Language].english}</span>
                         </li>
                         <li
                             onClick={() => handleLanguageChange('de')}
-                            className='hover:scale-105 transition-transform duration-200 ease-in-out flex items-center gap-2 cursor-pointer'
+                            className=' hover:scale-105 transition-transform duration-200 ease-in-out flex items-center gap-2 cursor-pointer'
                         >
                             {languageIcons['de']}
-                            <span>| {translations[slug as Language].german}</span>
+                            <div>|</div>
+                            <span> {translations[slug as Language].german}</span>
                         </li>
                     </ul>
                 </div>
