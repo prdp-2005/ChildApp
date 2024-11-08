@@ -10,7 +10,7 @@ const Banner = () => {
     const { theme, systemTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
     const darkMode = currentTheme === 'dark';
-    const { slug } = useContext(LanguageContext)
+    const { slug } = useContext(LanguageContext) 
     return (
         < div className='overflow-hidden w-full mt-5  px-3 md:px-11  lg:px-5 flex justify-center items-center' >
             <div className='flex justify-between items-center flex-wrap md:flex-nowrap w-[70%] lg:-mt-4 '>

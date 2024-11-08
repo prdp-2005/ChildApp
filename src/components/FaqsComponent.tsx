@@ -16,9 +16,8 @@ interface FaqcomponentProps {
 
 const Faqcomponent: React.FC<FaqcomponentProps> = ({ item, isOpen, onToggle }) => {
     return (
-        <div key={item.id} className="group flex flex-col gap-5 justify-center items-center cursor-pointer px-2  lg:px-0 w-full">
+        <div key={item.id} onClick={onToggle} className="group flex flex-col gap-5 justify-center items-center cursor-pointer px-2  lg:px-0 w-auto">
             <div
-                onClick={onToggle}
                 className="group flex flex-row gap-5 justify-between items-center w-full px-2 lg:px-0 lg:w-2/3"
                 aria-expanded={isOpen}
             >
