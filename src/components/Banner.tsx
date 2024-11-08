@@ -19,7 +19,7 @@ const Banner: React.FC<BannerProps> = ({ title, type, subheading1, subheading2 }
     const currentTheme = theme === 'system' ? systemTheme : theme;
     const darkMode = currentTheme === 'dark';
     return (
-        <div className="overflow-hidden w-full mt-24  px-3 md:px-11  lg:px-5 flex justify-center items-center">
+        <div className="overflow-hidden w-full mt-28  px-3 md:px-11  lg:px-5 flex justify-center items-center">
             <div className="flex justify-center  gap-3  xl:gap-12 2xl:gap-48 items-center flex-wrap md:flex-nowrap w-full 2xl:w-[80vw] lg:-mt-4">
 
                 <div className="flex flex-col gap-4 order-2 md:order-1 justify-between items-center md:items-start w-fit ">
