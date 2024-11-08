@@ -35,7 +35,7 @@ const Contact = () => {
                     <div className='flex flex-col gap-5 items-center w-full justify-center xl:items-end h-full'>
                         <form className='flex flex-col gap-5 items-center justify-center md:items-start'>
                             <div className='flex items-center gap-3 h-14 px-5 py-2 border border-[#D8D8D8] rounded-[20px] w-full sm:w-[420px]'>
-                                <CiUser className="text-cyan-300 h-[30px] w-[30px] " />
+                                <CiUser className="text-black dark:text-cyan-300 h-[30px] w-[30px] " />
                                 <input
                                     className='text-[#2D2D2D] font-normal text-base outline-none border-l-[1px] pl-2 w-full dark:bg-dark dark:text-white'
                                     placeholder={fullNamePlaceholder}
@@ -45,7 +45,7 @@ const Contact = () => {
                                 />
                             </div>
                             <div className='flex items-center gap-3 h-14 px-5 py-2 border border-[#D8D8D8] rounded-[20px] w-full sm:w-[420px]'>
-                                <CiMail className="text-cyan-300 h-[30px] w-[30px] " />
+                                <CiMail className="text-black dark:text-cyan-300 h-[30px] w-[30px] " />
                                 <input
                                     className='text-[#2D2D2D] font-normal text-base outline-none border-l-[1px] pl-2 w-full dark:bg-dark dark:text-white'
                                     placeholder={emailPlaceholder}
