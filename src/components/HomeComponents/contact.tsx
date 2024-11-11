@@ -5,6 +5,8 @@ import Link from 'next/link'
 import { LanguageContext } from '@/constants/providers/LanguageContext';
 import { static_text } from '@/constants/translations/Translations';
 import { CiUser, CiMail } from "react-icons/ci";
+import Image from 'next/image';
+import { Appassets } from '@/constants/Appassets';
 
 const Contact = () => {
     const { slug } = useContext(LanguageContext);
@@ -24,6 +26,11 @@ const Contact = () => {
                 </div>
                 <div className='flex flex-row flex-wrap lg:flex-nowrap justify-center md:justify-around w-full  items-center gap-12 h-auto'>
                     <div className='flex flex-col gap-7 justify-center items-center'>
+                        <Image
+                            src={Appassets?.contactimg}
+                            alt="External Image"
+                            className='w-fit'
+                        />
                         <p className='text-xl text-start font-semibold text-[#2D2D2D] dark:text-white'>{connectWithUs}</p>
                         <div className='flex gap-[16px]'>
                             <Link href={'https://www.instagram.com/chilld_official/'} target='_blank'><FaInstagram size={30} className='bg-cyan-50 dark:bg-[#1DF2F2] dark:text-black shadow-md rounded-full p-1' /></Link>

@@ -177,7 +177,6 @@ const Whychild = () => {
                     </div>
                 </div>
 
-                {/* slider for mobile  */}
                 <div className='block md:hidden text-center'>
                     <Slider {...settings}>
                         {data.map(item => (
@@ -190,7 +189,7 @@ const Whychild = () => {
                                         width={50}
                                         className='w-auto'
                                     />
-                                    <p className='text-sm font-semibold [line-height: 24px;]'>{item.text}</p>
+                                    <p className='text-sm font-semibold [line-height: 24px;] px-1'>{item.text}</p>
                                 </div>
                             </div>
                         ))}

@@ -153,13 +153,13 @@ const Footer = () => {
     return (
         <div className='w-full overflow-hidden flex flex-wrap pb-3 lg:pb-5 lg:pt-28 lg:px-14 pt-12 px-5 justify-center items-center'>
             <div className=' flex flex-col gap-10 sm:gap-24 md:items-start items-center xl:w-[100%]'>
-                <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between gap-5 lg:gap-11'>
-                    <div className='flex flex-col gap-3 justify-center items-center lg:items-start'>
+                <div className='w-full md:flex md:justify-between md:items-start  sm:flex sm:justify-between gap-5 lg:gap-11 '>
+                    <div className='flex flex-col gap-3 justify-center items-center lg:items-start '>
                         <Link href='/'>
                             <Image
                                 src={Appassets?.footerimg}
                                 alt="External Image"
-                                className='h-full w-full'
+                                className='lg:w-[350px]'
                             /></Link>
                         <p className='text-[#58595D] dark:text-white md:text-[32px] font-semibold text-2xl my-2 md:my-0'>
                             {getText(14)}
