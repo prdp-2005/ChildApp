@@ -41,7 +41,7 @@ export default function RootLayout({
             <Header />
             {children}
             <Footer />
-            <div className='fixed bottom-2 left-5 sm:hidden'>
+            <div className='fixed bottom-2 left-5 sm:hidden z-50'>
               <ThemeToggle />
             </div>
           </ThemeProvider>
