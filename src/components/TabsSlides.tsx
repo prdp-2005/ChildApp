@@ -120,15 +120,15 @@ const TabsSlides: React.FC<TabsSlidesProps> = ({ data, darkMode }) => {
 
     return (
         <div className="block md:hidden flex-col gap-5 justify-center items-center w-full">
-            <div className="md:w-[29%] h-full flex justify-center items-center">
-                <div className='absolute z-20 w-[250px] h-[500px]'>
+            <div className="md:w-[29%] h-full flex justify-center items-center mt-7">
+                <div className='absolute z-20 w-[250px] h-[520px]'>
                     <Image
                         src={Appassets.frame}
                         alt="Tab Image"
-                        className="object-cover  "
+                        className="object-cover "
                     />
                 </div>
-                <div className='p-7 '>
+                <div className='sm:p-7 '>
                     <Image
                         src={darkMode ? data[selectedIndex]?.darkImage || data[selectedIndex].image : data[selectedIndex].image}
                         alt="Tab Image"
@@ -139,7 +139,7 @@ const TabsSlides: React.FC<TabsSlidesProps> = ({ data, darkMode }) => {
                     />
                 </div>
             </div>
-            <div className="slider-container mx-auto">
+            <div className="slider-container mx-auto mt-4">
                 <Slider {...settings}>
                     {data.map((item) => (
                         <div key={item.id} className="flex flex-col gap-5 cursor-pointer justify-center items-start  rounded-lg p-5 flex-wrap bg-primary-alpha-10 hover:shadow-md hover:bg-teal-100 dark:hover:bg-[#15ACAC] mt-5">

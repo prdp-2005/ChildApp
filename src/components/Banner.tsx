@@ -51,7 +51,7 @@ const Banner: React.FC<BannerProps> = ({ title, type, subheading1, subheading2 }
                     <Image
                         src={Appassets?.frontbannerimg}
                         alt="Banner Image"
-                        layout="responsive"
+                        loading='eager'
                         className="rounded-lg"
                     />
                 </div>

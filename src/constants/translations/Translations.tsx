@@ -33,7 +33,7 @@ export const static_text = [
         language: "en",
       },
       {
-        text: "Versuche es heute",
+        text: "Teste Chilld",
         language: "de",
       },
     ],
@@ -70,7 +70,7 @@ export const static_text = [
     id: 8,
     data: [
       { text: "Pricing", language: "en" },
-      { text: "Preisgestaltung", language: "de" },
+      { text: "Preise", language: "de" },
     ],
   },
   {
@@ -91,7 +91,7 @@ export const static_text = [
     id: 11,
     data: [
       { text: "FAQ", language: "en" },
-      { text: "Häufige Fragen", language: "de" },
+      { text: "FAQ", language: "de" },
     ],
   },
   {
@@ -112,14 +112,14 @@ export const static_text = [
     id: 14,
     data: [
       { text: "Parenting made easy!", language: "en" },
-      { text: "Erziehung leicht gemacht!", language: "de" },
+      { text: "Parenting made easy!", language: "de" },
     ],
   },
   {
     id: 15,
     data: [
       { text: "Made with ❤️️️ from Twin Mom Carolin.", language: "en" },
-      { text: "Mit ❤️️️ von Zwillingsmama Carolin.", language: "de" },
+      { text: "Made with ❤️️️ von Zwillingsmama Carolin.", language: "de" },
     ],
   },
   {
@@ -132,50 +132,50 @@ export const static_text = [
   {
     id: 17,
     data: [
-      { text: "Be a chilld.", language: "en" },
-      { text: "Sei ein chilld", language: "de" },
+      { text: "Be chilld.", language: "en" },
+      { text: "Sei ge-chilld", language: "de" },
     ],
   },
   {
     id: 18,
     data: [
       { text: "Parent", language: "en" },
-      { text: "Elternteil", language: "de" },
+      { text: "Eltern", language: "de" },
     ],
   },
   {
     id: 19,
     data: [
       { text: "Certified experts and coaches at your fingertips 24/7.", language: "en" },
-      { text: "Zertifizierte Experten und Coaches stehen Ihnen rund um die Uhr zur Verfügung.", language: "de" },
+      { text: "Zertifizierte Experten und Coaches 24/7 einen Knopfdruck entfernt.", language: "de" },
     ],
   },
   {
     id: 20,
     data: [
       { text: "We guide you through all the stages of parenthood.", language: "en" },
-      { text: "Wir begleiten Sie durch alle Phasen der Elternschaft.", language: "de" },
+      { text: "Wir begleiten Dich durch alle Phasen des Elternseins.", language: "de" },
     ],
   },
   {
     id: 21,
     data: [
       { text: "Certified experts and coaches at your fingertip!", language: "en" },
-      { text: "Zertifizierte Experten und Coaches stehen Ihnen zur Verfügung!", language: "de" },
+      { text: "Zertifizierte Experten und Coaches nur einen Knopfdruck entfern!", language: "de" },
     ],
   },
   {
     id: 22,
     data: [
       { text: "24/7 help with Chillo", language: "en" },
-      { text: "Hilfe rund um die Uhr mit Chillo", language: "de" },
+      { text: "24/7 Unterstützung mit Chillo", language: "de" },
     ],
   },
   {
     id: 23,
     data: [
       { text: "Create Group Sessions for you and your friends.", language: "en" },
-      { text: "Erstellen Sie Gruppensitzungen für Sie und Ihre Freunde.", language: "de" },
+      { text: "Erstelle Gruppen-Sessions für Dich und Deine Freunde.", language: "de" },
     ],
   },
   {
@@ -189,7 +189,7 @@ export const static_text = [
     id: 25,
     data: [
       { text: "What can you do with the Chilld app?", language: "en" },
-      { text: "Was können Sie mit der Chilld-App tun?", language: "de" },
+      { text: "Was kann die Chilld-App?", language: "de" },
     ],
   },
   {
@@ -203,21 +203,21 @@ export const static_text = [
     id: 27,
     data: [
       { text: "Affordable expert knowledge.", language: "en" },
-      { text: "Erschwingliches Expertenwissen.", language: "de" },
+      { text: "Bezahlbares Expertenwissen.", language: "de" },
     ],
   },
   {
     id: 28,
     data: [
       { text: "Free knowledge in your pocket.", language: "en" },
-      { text: "Kostenloses Wissen in Ihrer Tasche.", language: "de" },
+      { text: "Kostenloses Wissen in Deiner Tasche.", language: "de" },
     ],
   },
   {
     id: 29,
     data: [
       { text: "Your data is safe.", language: "en" },
-      { text: "Ihre Daten sind sicher.", language: "de" },
+      { text: "Deine Daten sind sicher.", language: "de" },
     ],
   },
   {
@@ -231,7 +231,7 @@ export const static_text = [
     id: 31,
     data: [
       { text: "These are just a few reasons why you’ll love the Chilld app!", language: "en" },
-      { text: "Das sind nur einige Gründe, warum Sie die Chilld-App lieben werden!", language: "de" },
+      { text: "Das sind nur ein paar Gründe, warum Du die Chilld-App lieben wirst!", language: "de" },
     ],
   },
   {
@@ -417,7 +417,7 @@ export const static_text = [
     id: 55,
     data: [
       { language: 'en', text: "Let’s get in touch!" },
-      { language: 'de', text: "Nehmen wir Kontakt auf!" },
+      { language: 'de', text: "Schreib uns gerne!" },
     ]
   },
   {
@@ -431,7 +431,7 @@ export const static_text = [
     id: 57,
     data: [
       { language: 'en', text: "Connect with us" },
-      { language: 'de', text: "Verbinden Sie sich mit uns" },
+      { language: 'de', text: "Schreibe uns gerne" },
     ]
   },
   {
@@ -459,7 +459,7 @@ export const static_text = [
     id: 61,
     data: [
       { language: 'en', text: "Submit" },
-      { language: 'de', text: "Einreichen" },
+      { language: 'de', text: "Senden" },
     ]
   },
   {
@@ -473,7 +473,7 @@ export const static_text = [
     id: 63,
     data: [
       { language: 'en', text: "Use Chilld to find clients, host events and" },
-      { language: 'de', text: "Verwenden Sie Chilld, um Kunden zu finden, Veranstaltungen auszurichten und" },
+      { language: 'de', text: "Verwende Chilld, um neue Kunden zu finden, Veranstaltungen auszurichten und" },
     ]
   },
   {
@@ -494,21 +494,21 @@ export const static_text = [
     id: 66,
     data: [
       { language: 'en', text: 'Reach parents globally, effortlessly!' },
-      { language: 'de', text: 'Erreichen Sie Eltern weltweit, mühelos!' },
+      { language: 'de', text: 'Erreiche Eltern weltweit, mühelos!' },
     ]
   },
   {
     id: 67,
     data: [
       { language: 'en', text: 'Offer group sessions' },
-      { language: 'de', text: 'Bieten Sie Gruppensitzungen an' },
+      { language: 'de', text: 'Biete Gruppensitzungen an' },
     ]
   },
   {
     id: 68,
     data: [
       { language: 'en', text: 'Helping parents without stress.' },
-      { language: 'de', text: 'Helfen Sie Eltern ohne Stress.' },
+      { language: 'de', text: 'Hilf Eltern, ohne Stress.' },
     ]
   },
   {
@@ -522,42 +522,42 @@ export const static_text = [
     id: 70,
     data: [
       { language: 'en', text: 'Offer global digital events, invite unlimited guests and further experts. Enjoy our in-app marketing.' },
-      { language: 'de', text: 'Bieten Sie globale digitale Veranstaltungen an, laden Sie unbegrenzt Gäste und weitere Experten ein. Genießen Sie unser In-App-Marketing.' },
+      { language: 'de', text: 'Biete globale digitale Veranstaltungen an, lade unbegrenzt Gäste und weitere Experten ein. Genieße unser In-App-Marketing.' },
     ]
   },
   {
     id: 71,
     data: [
       { language: 'en', text: 'Your expert profil is accessable by parents world-wide.' },
-      { language: 'de', text: 'Ihr Expertenprofil ist für Eltern weltweit zugänglich.' },
+      { language: 'de', text: 'Dein Expertenprofil ist für Eltern weltweit zugänglich.' },
     ]
   },
   {
     id: 72,
     data: [
       { language: 'en', text: 'Have friend groups book group sessions and have all session information right at hand.' },
-      { language: 'de', text: 'Lassen Sie Freundesgruppen Gruppensitzungen buchen und haben Sie alle Sitzungsinformationen direkt zur Hand.' },
+      { language: 'de', text: 'Lasse Freundesgruppen Gruppen-Sessions buchen und haben alle Session-Informationen direkt zur Hand.' },
     ]
   },
   {
     id: 73,
     data: [
       { language: 'en', text: 'Connect, message, pay, get reminders, send automated invoices, and more, all in your pocket.' },
-      { language: 'de', text: 'Verbinden, Nachrichten senden, bezahlen, Erinnerungen erhalten, automatisierte Rechnungen senden und mehr – alles in Ihrer Tasche.' },
+      { language: 'de', text: 'Venetzen, Nachrichten senden, bezahlen, Erinnerungen erhalten, automatisierte Rechnungen senden und mehr – alles aus deiner Tasche.' },
     ]
   },
   {
     id: 74,
     data: [
       { language: 'en', text: 'Your client stats show you how to keep parents coming back.' },
-      { language: 'de', text: 'Ihre Kundenstatistiken zeigen Ihnen, wie Sie dafür sorgen, dass Eltern wiederkommen.' },
+      { language: 'de', text: 'Deine Kundenstatistiken zeigen dir, wie Deine Kunden wieder kommen.' },
     ]
   },
   {
     id: 75,
     data: [
       { language: 'en', text: '“Parenthood isn’t easy,' },
-      { language: 'de', text: '„Elternschaft ist nicht einfach,' },
+      { language: 'de', text: '„Elternsein ist nicht einfach,' },
     ]
   },
   {
@@ -571,21 +571,21 @@ export const static_text = [
     id: 77,
     data: [
       { language: 'en', text: 'Carolin Neumann, Founder of Chilld and Twin Mom' },
-      { language: 'de', text: 'Carolin Neumann, Gründerin von Chilld und Twin Mom' },
+      { language: 'de', text: 'Carolin Neumann, Gründerin von Chilld und Zwillingsmama' },
     ]
   },
   {
     id: 78,
     data: [
       { language: 'en', text: 'Join Free Events' },
-      { language: 'de', text: 'Nehmen Sie an kostenlosen Veranstaltungen teil' },
+      { language: 'de', text: 'Nimm an kostenlosen Veranstaltungen teil' },
     ]
   },
   {
     id: 79,
     data: [
       { language: 'en', text: 'Join our free events to solve common parenting problems.' },
-      { language: 'de', text: 'Nehmen Sie an unseren kostenlosen Veranstaltungen teil, um häufige Erziehungsprobleme zu lösen.' },
+      { language: 'de', text: 'Nimm an unseren kostenlosen Veranstaltungen teil, um die häufigsten Erziehungsprobleme zu lösen.' },
     ]
   },
   {
@@ -606,7 +606,7 @@ export const static_text = [
     id: 82,
     data: [
       { language: 'en', text: 'Join free events' },
-      { language: 'de', text: 'Nehmen Sie an kostenlosen Veranstaltungen teil' },
+      { language: 'de', text: 'Nimm an kostenlosen Veranstaltungen teil' },
     ]
   },
   {
@@ -634,14 +634,14 @@ export const static_text = [
     id: 86,
     data: [
       { language: 'en', text: 'How much will it cost me?' },
-      { language: 'de', text: 'Wie viel wird es mich kosten?' },
+      { language: 'de', text: 'Wie teuer ist es?' },
     ]
   },
   {
     id: 87,
     data: [
       { language: 'en', text: 'Parents can test Chilld one week for free. Then you will have to pay our subscription fee. LINK. Additional session costs will apply.' },
-      { language: 'de', text: 'Eltern können Chilld eine Woche lang kostenlos testen. Dann müssen Sie unsere Abonnementgebühr bezahlen. LINK. Es fallen zusätzliche Sitzungskosten an.' },
+      { language: 'de', text: 'Eltern können Chilld eine Woche lang kostenlos testen. Dann müssen Sie unsere Abonnementgebühr bezahlen. LINK. Es fallen zusätzliche Session-Gebühren an.' },
     ]
   },
   {
@@ -670,7 +670,7 @@ export const static_text = [
     id: 91,
     data: [
       { language: 'en', text: 'You can totally do that. In our experience, mouth-to-mouth recommendations between friends work better than finding strangers on LinkedIn. If you want to get parenting experts on different topics, we have some recommendations for you, and you can even bring your friends.' },
-      { language: 'de', text: 'Das können Sie gerne tun. Unserer Erfahrung nach funktionieren Mundpropaganda und Empfehlungen zwischen Freunden besser als die Suche nach Fremden auf LinkedIn. Wenn Sie Elternexperten zu verschiedenen Themen suchen, haben wir einige Empfehlungen für Sie, und Sie können sogar Ihre Freunde mitbringen.' },
+      { language: 'de', text: 'Das kannst Du gerne tun. Unserer Erfahrung nach funktionieren Mundpropaganda und Empfehlungen zwischen Freunden besser als die Suche nach Fremden auf LinkedIn. Wenn Du Elternexperten zu verschiedenen Themen suchst, haben wir einige Empfehlungen für Dich vorbereitet, und Du kannst sogar deine Freunde mitbringen.' },
     ],
   },
   // FAQ 4
@@ -685,7 +685,7 @@ export const static_text = [
     id: 93,
     data: [
       { language: 'en', text: 'We want to have the best possible experience for all, both parents and experts. Additionally, group sessions and events only have a limited number of seats. Therefore we require reliable bookings, so your seat will only be reserved after payment.' },
-      { language: 'de', text: 'Wir möchten das bestmögliche Erlebnis für alle bieten, sowohl für Eltern als auch für Experten. Gruppenveranstaltungen haben zudem eine begrenzte Anzahl an Plätzen. Daher benötigen wir zuverlässige Buchungen, sodass Ihr Platz nur nach Zahlung reserviert wird.' },
+      { language: 'de', text: 'Wir möchten das bestmögliche Erlebnis für alle bieten, sowohl für Eltern als auch für Experten. Gruppenveranstaltungen haben zudem eine begrenzte Anzahl an Plätzen. Daher benötigen wir zuverlässige Buchungen, sodass Dein Platz nur nach Zahlung reserviert wird.' },
     ],
   },
   // FAQ 5
@@ -700,7 +700,7 @@ export const static_text = [
     id: 95,
     data: [
       { language: 'en', text: 'Protecting your data is one of our top priorities. That’s why we only process essential data, which again we do with absolute care to avoid any leaks and mishaps. All Chilld data are stored and processed on German or EU servers in line with the GDPR. You can find more details in our privacy statement.' },
-      { language: 'de', text: 'Der Schutz Ihrer Daten ist für uns eine der obersten Prioritäten. Deshalb verarbeiten wir nur die notwendigen Daten und tun dies mit größter Sorgfalt, um Lecks und Missgeschicke zu vermeiden. Alle Chilld-Daten werden auf deutschen oder EU-Servern gemäß der DSGVO gespeichert und verarbeitet. Mehr Details finden Sie in unserer Datenschutzerklärung.' },
+      { language: 'de', text: 'Der Schutz Deiner Daten ist für uns eine der obersten Prioritäten. Deshalb verarbeiten wir nur die notwendigen Daten und tun dies mit größter Sorgfalt, um Lecks und Missgeschicke zu vermeiden. Alle Chilld-Daten werden auf deutschen oder EU-Servern gemäß der DSGVO gespeichert und verarbeitet. Mehr Details finden Sie in unserer Datenschutzerklärung.' },
     ],
   },
   // FAQ 6
@@ -714,16 +714,16 @@ export const static_text = [
   {
     id: 97,
     data: [
-      { language: 'en', text: 'Chilld parents can use Chilld for free. You just pay for the coaching or workshops you book. For coaches, we offer two attractive memberships at very low rates: the Basic and Premium membership.' },
-      { language: 'de', text: 'Eltern können Chilld kostenlos nutzen. Sie zahlen nur für die Coachings oder Workshops, die Sie buchen. Für Coaches bieten wir zwei attraktive Mitgliedschaften zu sehr günstigen Konditionen: die Basis- und die Premium-Mitgliedschaft.' },
+      { language: 'en', text: 'Chilld parents can use Chilld-basic for free. You just pay for the coaching or workshops you book. For coaches, we offer two attractive memberships at very low rates: the Basic and Premium membership.' },
+      { language: 'de', text: 'Eltern können Chilld-Basic kostenlos nutzen. Sie zahlen nur für die Coachings oder Workshops, die Sie buchen. Für Coaches bieten wir zwei attraktive Mitgliedschaften zu sehr günstigen Konditionen: die Basis- und die Premium-Mitgliedschaft.' },
     ],
   },
   // FAQ 7
   {
     id: 98,
     data: [
-      { language: 'en', text: 'When is the payment due for a coaching session?' },
-      { language: 'de', text: 'Wann ist die Zahlung für eine Coaching-Sitzung fällig?' },
+      { language: 'en', text: 'When is the payment due for a expert or a coaching session?' },
+      { language: 'de', text: 'Wann ist die Zahlung für eine Experten- oder Coaching-Session fällig?' },
     ],
   },
   {
@@ -760,7 +760,7 @@ export const static_text = [
     id: 103,
     data: [
       { language: 'en', text: 'If the expert cancels 24h+ before the session, the cancellation is valid. If he cancels after, he is contractually obliged to hold the session or offer an alternative timeslot.' },
-      { language: 'de', text: 'Wenn der Experte mehr als 24 Stunden vorher absagt, ist die Absage gültig. Erfolgt die Absage später, ist er vertraglich verpflichtet, die Sitzung abzuhalten oder einen Alternativtermin anzubieten.' },
+      { language: 'de', text: 'Wenn der Experte mehr als 24 Stunden vorher absagt, ist die Absage gültig. Erfolgt die Absage später, ist er vertraglich verpflichtet, die Session abzuhalten oder einen Alternativtermin anzubieten.' },
     ],
   },
   // FAQ 10
