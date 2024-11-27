@@ -132,15 +132,17 @@ export const static_text = [
   {
     id: 17,
     data: [
-      { text: "Be chilld.", language: "en" },
-      { text: "Sei ge-chilld", language: "de" },
+      { text: "Be chilld", language: "en" },
+      // { text: "Sei ge-chilld", language: "de" },
+      { text: "Elternsein, aber", language: "de" },
     ],
   },
   {
     id: 18,
     data: [
       { text: "Parent", language: "en" },
-      { text: "Eltern", language: "de" },
+      { text: "gechilld", language: "de" },
+      // { text: "Eltern", language: "de" },
     ],
   },
   {
@@ -360,8 +362,8 @@ export const static_text = [
   {
     id: 47,
     data: [
-      { language: 'en', text: "Ideal for Growing Companies." },
-      { language: 'de', text: "Ideal für wachsende Unternehmen." },
+      { language: 'en', text: "For parents who care" },
+      { language: 'de', text: "Für Eltern, die sich kümmern" },
     ]
   },
   {
@@ -776,6 +778,73 @@ export const static_text = [
     data: [
       { language: 'en', text: 'For parents and experts, the contractual partner is always Chilld GmbH & Co.KG, the operator of Chilld. We will handle all payments and be your contact for all upcoming issues.' },
       { language: 'de', text: 'Für Eltern und Experten ist der Vertragspartner immer die Chilld GmbH & Co.KG, der Betreiber von Chilld. Wir kümmern uns um alle Zahlungen und sind Ihr Ansprechpartner für alle anstehenden Fragen.' },
+    ],
+  },
+  {
+    id: 106,
+    data: [
+      { language: 'en', text: `Chilld: The Parenting Ecosystem` },
+      { language: 'de', text: `Chilld: Das Eltern-Ökosystem` },
+    ],
+  },
+  {
+    id: 107,
+    data: [
+      { language: 'en', text: `Chilld bridges the gap in support during the most transformative times for parents, from the first day of pregnancy through to the teenage years and beyond. We are here to help every step of the way, offering continuous support as your child grows—whether it's the pregnancy journey, early childhood, school years, or even guiding parents and grandparents on how to be more supportive in their evolving roles.` },
+      { language: 'de', text: `Chilld schließt die Lücke in der Unterstützung während der transformativsten Zeiten für Eltern – vom ersten Tag der Schwangerschaft bis hin zu den Teenagerjahren und darüber hinaus. Wir sind da, um dich auf jedem Schritt des Weges zu begleiten – sei es während der Schwangerschaft, in der frühen Kindheit, in den Schuljahren oder auch, um Eltern und Großeltern zu zeigen, wie sie sich gegenseitig und ihre Kinder sowie Enkelkinder besser unterstützen können.` },
+    ],
+  },
+  {
+    id: 108,
+    data: [
+      { language: 'en', text: `About Chilld` },
+      { language: 'de', text: `Über Kind` },
+    ],
+  },
+  {
+    id: 109,
+    data: [
+      { language: 'en', text: ` Chilld, an innovative company in the field of parenting and family support, was founded in 2024 by Carolin. After a challenging parental leave with her twins, which were the hardest two years of her life, she decided to help other parents by providing practical solutions. Her goal was to simplify daily life for parents and make important information and offers easily and quickly accessible via mobile phone. Particularly, coaching and courses, which had been a great relief for her personally but were often too expensive, she wanted to make affordable and accessible to a broader audience.` },
+      {
+        language: 'de', text: `Chilld, ein innovatives Unternehmen im Bereich der Eltern- und Familienunterstützung, wurde 2024 von Carolin gegründet. Nach einer herausfordernden Elternzeit mit ihren Zwillingen, die für sie die härtesten zwei Jahre ihres Lebens waren, beschloss sie, anderen Eltern zu helfen, indem sie ihnen praktische Lösungen bietet. Ihr Ziel war es, den Elternalltag zu vereinfachen und wichtige Informationen sowie Angebote bequem und schnell auf dem Handy zugänglich zu machen. Besonders Coachings und Kurse, die für sie selbst eine enorme Erleichterung waren, aber oft zu teuer, wollte sie für eine breitere Masse erschwinglich und zugänglich machen.
+` },
+    ],
+  },
+  {
+    id: 110,
+    data: [
+      {
+        language: 'en', text: ` Carolin is a true all-rounder: mother of twins, author, IT consultant at a large company, computer
+                            enthusiast, passionate baker, and half-marathon runner. Carolin has been recognized multiple times for her
+                            co-founded platform "BYTE Challenge," and she even received an invitation to Schloss Bellevue from the
+                            Federal President. BYTE Challenge enables thousands of students worldwide to access exciting topics in
+                            technology and computer science for free. This initiative has received numerous accolades.` },
+      {
+        language: 'de', text: `Über die Gründerin: Carolin ist eine wahre Allrounderin: Mutter von Zwillingen, Autorin, IT-Beraterin bei einem großen Unternehmen, Computerliebhaberin, leidenschaftliche Bäckerin und Halbmarathonläuferin. Carolin wurde bereits für ihre mitgegründete Plattform "BYTE Challenge" mehrfach ausgezeichnet, und Carolin erhielt sogar eine Einladung zum Bundespräsidenten in Schloss Bellevue. Die BYTE Challenge ermöglicht tausenden von Schülerinnen und Schülern weltweit den kostenlosen Zugang zu spannenden Themen aus der Technik- und Informatikwelt. Diese Initiative wurde mehrfach ausgezeichnet.
+` },
+    ],
+  },
+  {
+    id: 111,
+    data: [
+      {
+        language: 'en', text: `  Carolin graduated from TU Berlin, initially in Information Technology in Mechanical Engineering
+                            (Bachelor) and later in Computer Science (Master). During her studies, she gained extensive practical
+                            experience in various start-ups, medium-sized companies, and as a freelancer, working as an intern,
+                            research assistant, data analyst, and developer. After two years of parental leave, she returned to her
+                            employer, IBM. Today, she is also actively involved on the board of the Society for Computer Science
+                            (Gesellschaft für Informatik e.V.).` },
+      {
+        language: 'de', text: `Carolin hat ihren Abschluss an der TU Berlin gemacht, zunächst in Informationstechnik im Maschinenwesen (Bachelor) und später in Informatik (Master). Während ihres Studiums sammelte sie umfangreiche praktische Erfahrungen in verschiedenen Start-ups, mittelständischen Unternehmen und als Freiberuflerin, unter anderem als Praktikantin, wissenschaftliche Mitarbeiterin, Data Analystin und Entwicklerin. Nach 2 Jahren Elternzeit kehrte sie zu ihrem Arbeitgeber IBM zurück. Heute ist sie zudem auch im Vorstand der Gesellschaft für Informatik e.V. tätig.
+
+` },
+    ],
+  },
+  {
+    id: 112,
+    data: [
+      { language: 'en', text: `We are constantly adding new features` },
+      { language: 'de', text: `Wir fügen ständig neue Funktionen hinzu` },
     ],
   },
 ];

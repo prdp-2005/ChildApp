@@ -118,7 +118,7 @@ const Planes: React.FC<StoriesProps> = ({ text, gtext }) => {
         setSelectedIndex(index);
     }
     const title = slug === 'en' ? text : gtext;
-
+    
     // const planesdata = [
     //     {
     //         id: 1,
@@ -154,9 +154,9 @@ const Planes: React.FC<StoriesProps> = ({ text, gtext }) => {
             id: 1,
             planetype: static_text.find(item => item.id === 45)?.data.find(dataItem => dataItem.language === slug)?.text || 'Child Parent',
             price: mounted
-                ? (slug === 'en' ? '$99.84 ' : '€99.84 ')
+                ? (slug === 'en' ? '$83.20 ' : '€83.20 ')
                 : (slug === 'en' ? '$8.32 ' : '€8.32 '),
-            desc: static_text.find(item => item.id === 47)?.data.find(dataItem => dataItem.language === slug)?.text || 'Ideal for Growing Companies.',
+            desc: static_text.find(item => item.id === 47)?.data.find(dataItem => dataItem.language === slug)?.text || 'For parents who care',
             f1: static_text.find(item => item.id === 83)?.data.find(dataItem => dataItem.language === slug)?.text || 'Everything from “Free”',
             f2: static_text.find(item => item.id === 84)?.data.find(dataItem => dataItem.language === slug)?.text || 'Ad free',
             f3: static_text.find(item => item.id === 85)?.data.find(dataItem => dataItem.language === slug)?.text || '24/7 Expert “Chillo” (AI Assistant)',

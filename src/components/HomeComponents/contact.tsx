@@ -18,7 +18,7 @@ const Contact = () => {
     const messagePlaceholder = static_text.find(item => item.id === 60)?.data.find(dataItem => dataItem.language === slug)?.text || 'Message';
     const submitButton = static_text.find(item => item.id === 61)?.data.find(dataItem => dataItem.language === slug)?.text || 'Submit';
     return (
-        <div className='overflow-hidden w-[80%] h-auto mx-auto pt-12  md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 my-6'>
+        <div className='overflow-hidden w-[80%] h-auto mx-auto pt-12  md:px-14 lg:py-12 lg:px-5 flex-wrap gap-14 md:my-6'>
             <div className='flex flex-col w-full md:w-auto  justify-center items-start gap-14 md:border md:border-[#E5F4F2] md:px-14 py-8 p-2 rounded-2xl'>
                 <div className='flex flex-col justify-center text-start gap-3 md:items-start'>
                     <p className='font-semibold text-2xl sm:text-3xl md:text-4xl text-[#2D2D2D] text-wrap text-center md:text-start dark:text-white'>{heading}</p>

@@ -244,9 +244,9 @@ const TabBanners: React.FC<TabBannersProps> = ({ data, darkMode, heading }) => {
     const handleMouseLeave = () => setIsHovered(false);
 
     return (
-        <div className="overflow-hidden w-full mx-auto py-12 px-14 lg:py-12 lg:px-5 my-6">
+        <div className="overflow-hidden w-full md:mx-auto gap-8 md:gap-0 md:py-12 md:px-14 lg:py-12 lg:px-5 my-10 md:my-6">
             <div className="flex flex-col items-center justify-center md:flex-nowrap">
-                <p className="font-semibold text-2xl lg:text-4xl flex justify-center items-center my-5 mx-3 text-wrap">
+                <p className="font-semibold text-xl md:text-4xl my-5 mx-2 text-center lg:text-left">
                     {heading}
                 </p>
                 <div className="hidden md:flex justify-center items-center">
@@ -262,7 +262,7 @@ const TabBanners: React.FC<TabBannersProps> = ({ data, darkMode, heading }) => {
                             <div
                                 className=" flex transform translate-x-full transition-transform duration-1000 ease-in-out hover:translate-x-0 w-fit h-fit"
                                 style={{
-                                    transform: `translateX(-${selectedIndex * 100}%)`,
+                                    transform: `translateX(-${selectedIndex * 100}%) `,
                                 }}
                             >
 
@@ -273,7 +273,7 @@ const TabBanners: React.FC<TabBannersProps> = ({ data, darkMode, heading }) => {
                                             alt="Tab Image"
                                             width={202}
                                             height={448}
-                                            className="object-cover w-full h-full "
+                                            className="object-cover w-full h-full opacity-100"
                                         />
                                     </div>
                                 ))}
