@@ -42,7 +42,6 @@ const NewFeature = () => {
                         src={darkMode ? Appassets?.featuredarkimg : Appassets?.featureimg}
                         alt="Founder"
                         className="rounded-lg object-cover"
-                        priority
                     />
                 </div>
                 <div className="flex-col w-fit sm:w-[80%]  lg:w-[50%] gap-5 justify-center items-center h-full">

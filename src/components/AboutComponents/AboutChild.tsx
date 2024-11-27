@@ -61,7 +61,6 @@ const AboutChild = () => {
                         className="rounded-lg shadow-lg object-cover"
                         width={354}
                         height={560}
-                        priority
                     />
                 </div>
             </div>
