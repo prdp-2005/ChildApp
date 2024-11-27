@@ -26,8 +26,8 @@ export class Appassets {
     static mainlightbanner = require('../../public/About/main light banner image.png');
     static maindarkbanner = require('../../public/About/main dark banner image.png');
     static Ecoimage = require('../../public/home/eco.png');
-    static founderimg = require('../../public/about/founderimg.png');
-    static featureimg = require('../../public/about/newfeature.png');
-    static featuredarkimg = require('../../public/about/newfeatureDark.png');
+    static founderimg = require('../../public/home/eco.png');
+    static featureimg = require('../../public/home/eco.png');
+    static featuredarkimg = require('../../public/home/eco.png');
 
 }
